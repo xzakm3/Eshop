@@ -1,46 +1,53 @@
-* {box-sizing: border-box;}
+* {
+  box-sizing: border-box; }
 
 .main-container {
-    margin: 0 auto;
-    font: 1.2em Helvetica, arial, sans-serif;
-    display: grid;
-    grid-gap: 2px;
-    grid-template-areas: 
-    "header"
-    "aside"
-    "content"
-    "footer"
-}
+  display: grid;
+  grid-gap: 2px;
+  grid-template-areas: "header" "aside" "content" "footer"; }
+  .main-container > * {
+    background-color: #EAF8BF; }
+  .main-container > header {
+    height: 300px;
+    background: url(../images/header-background.jpeg), no-repeat center center fixed;
+    background-size: cover;
+    grid-area: header; }
+    .main-container > header > nav {
+      border-radius: 5px;
+      max-width: 1080px;
+      margin: 0 auto;
+      margin-top: 5px;
+      background: rgba(248, 249, 250, 0.95) !important; }
+    .main-container > header .search-row {
+      margin-top: 100px; }
+      .main-container > header .search-row .form {
+        display: flex;
+        justify-content: center; }
+        .main-container > header .search-row .form .form-control {
+          border-radius: 0px;
+          width: 80%;
+          height: 50px; }
+        .main-container > header .search-row .form .search-button {
+          vertical-align: 0px;
+          height: 50px;
+          background-color: white;
+          border-radius: 0px;
+          border-top-right-radius: 7px;
+          border-bottom-right-radius: 7px; }
+  .main-container > aside {
+    grid-area: aside; }
+    .main-container > aside > ul {
+      list-style: none; }
+      .main-container > aside > ul > li {
+        display: block; }
+  .main-container > main {
+    grid-area: content; }
+  .main-container > footer {
+    grid-area: footer; }
 
-.main-container > * {
-	border: 2px solid #000;
-	background-color: #EAF8BF;
-	border-radius: 3px;
-	padding: 10px;
-}
+@media (min-width: 680px) {
+  .main-container {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: "header header header header header header header header header header header header" "aside aside aside content content content content content content content content content" "footer footer footer footer footer footer footer footer footer footer footer footer"; } }
 
-@media(min-width: 500px) {
-    .main-container {
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-areas: 
-        "header header header header header header header header header header header header"
-        "aside aside aside content content content content content content content content content"
-        "footer footer footer footer footer footer footer footer footer footer footer footer"
-    }
-}
-
-.main-header {
-    grid-area: header;
-}
-
-.main-aside {
-    grid-area: aside;
-}
-
-.main-content {
-    grid-area: content;
-}
-
-.main-footer {
-    grid-area: footer;
-}
+/*# sourceMappingURL=main_styles.css.map */
