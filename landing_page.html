@@ -18,6 +18,8 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    
+    <script type="text/javascript" src="javascript/aside-menu.js"></script>
 </head>
 
 <body>
@@ -31,7 +33,7 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <a class="navbar-brand" href="#">
-                    <img src="images/logo/logo.png" width="130px" height="auto" alt="Logo">
+                        <img src="images/logo/logo.png" width="130px" height="auto" alt="Logo">
                     </a>
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
@@ -68,84 +70,115 @@
             </div>
         </header>
         <aside>
-            <h3>Kategórie</h3>
-            <ul>
-                <li>
-                    <a href="#">Gitary</a>
-                </li>
-                <li>
-                    <a href="#">Basgitary</a>
-                </li>
-                <li>
-                    <a href="#">Klávesové nástroje</a>
-                </li>
-                <li>
-                    <a href="#">Bicie nástroje</a>
-                </li>
-                <li>
-                    <a href="#">Dychové nástroje</a>
-                </li>
-                <li>
-                    <a href="#">Sláčikové nástroje</a>
-                </li>
-                <li>
-                    <a href="#">Štúdio</a>
-                </li>
-                <li>
-                    <a href="#">Príslušenstvo</a>
-                </li>
-                <li>
-                    <a href="#">Osobné audio</a>
-                </li>
-                <li>
-                    <a href="#">Svetlá</a>
-                </li>
-                <li>
-                    <a href="#">Hudobná literatúra a CD</a>
-                </li>
-            </ul>
+            <div class="aside-menu-header">
+                <h3>Kategórie</h3>
+                <button type="button" data-toggle="collapse" data-target="#asideNavbarSupportedContent" aria-controls="asideNavbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-angle-down fa-2x"></i>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="asideNavbarSupportedContent">
+                <ul>
+                    <li class="nav-item">
+                        <a href="#">Gitary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Basgitary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Klávesové nástroje</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Bicie nástroje</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Dychové nástroje</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Sláčikové nástroje</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Štúdio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Príslušenstvo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Osobné audio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Svetlá</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Hudobná literatúra a CD</a>
+                    </li>
+                </ul>
+            </div>
         </aside>
         <main>
             Main content
-
         </main>
         <footer>
             <div class="row">
                 <div class="col-md-4 col-sm-12" align="center">
                     <img src="images/logo/logo.png" width="150px" height="auto" alt="Logo">
-                    <p><b>E-mail:</b>info@muzikaland.com</p>
-                    <p><b>Adresa:</b>Ilkovičová 2</p>
-                    <p><b>Telefón:</b>+421854123</p>
+                    <p>
+                        <b>E-mail:</b>info@muzikaland.com</p>
+                    <p>
+                        <b>Adresa:</b>Ilkovičová 2</p>
+                    <p>
+                        <b>Telefón:</b>+421854123</p>
                 </div>
                 <div class="col-md-4  col-sm-12" align="center">
                     <h4>Navigácia</h4>
                     <div class="line"></div>
                     <ul>
-                        <li><a href="#">Úvod</a></li>
-                        <li><a href="#">Recenzie</a></li>
-                        <li><a href="#">O nás</a></li>
-                        <li><a href="#">Poradňa</a></li>
-                        <li><a href="#">Kontakt</a></li>
+                        <li>
+                            <a href="#">Úvod</a>
+                        </li>
+                        <li>
+                            <a href="#">Recenzie</a>
+                        </li>
+                        <li>
+                            <a href="#">O nás</a>
+                        </li>
+                        <li>
+                            <a href="#">Poradňa</a>
+                        </li>
+                        <li>
+                            <a href="#">Kontakt</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-md-4  col-sm-12" align="center">
                     <h4>Odkazy</h4>
                     <div class="line"></div>
                     <ul>
-                        <li><a href="#">Kamenné predajne</a></li>
-                        <li><a href="#">Prečo práve u nás</a></li>
-                        <li><a href="#">Možnosti platby</a></li>
-                        <li><a href="#">Obchodné podmienky</a></li>
-                        <li><a href="#">Sociálne siete</a></li>
+                        <li>
+                            <a href="#">Kamenné predajne</a>
+                        </li>
+                        <li>
+                            <a href="#">Prečo práve u nás</a>
+                        </li>
+                        <li>
+                            <a href="#">Možnosti platby</a>
+                        </li>
+                        <li>
+                            <a href="#">Obchodné podmienky</a>
+                        </li>
+                        <li>
+                            <a href="#">Sociálne siete</a>
+                        </li>
                     </ul>
                 </div>
             </div>
             <div class="row">
-                <p>&copy; 2018 Hudobné nástroje <i>Muzikaland</i> | Všetky práve vyhradené</p>
+                <p>&copy; 2018 Hudobné nástroje
+                    <i>Muzikaland</i> | Všetky práve vyhradené</p>
             </div>
         </footer>
     </div>
-
 </body>
 
 </html>

@@ -49,15 +49,26 @@
     & > aside {
         grid-area: aside;
         background-color: white;
-        & > h3 {
+        & > .aside-menu-header {
             background-color: black;
-            color: white;
-            text-align: center;
             padding: 10px 0px;
-            margin-bottom: 0px;
-            font-weight: 350;
+            & > h3 {
+                color: white;
+                font-weight: 350;
+                display: inline;
+                margin-left: calc(50% - 60px);
+            }
+            & > button {
+                background: rgba(255, 255, 255, 0.0);
+                color: white;
+                border: none;
+                float: right;
+                margin-right: 25px;
+                margin-top: 3px;
+                display: block;
+            }
         }
-        & > ul {
+        ul {
             list-style: none;
             padding: 10px 10px 20px 27px;
             border: 1px solid #ddd;
@@ -128,6 +139,10 @@
         "header header header header header header header header header header header header"
         "aside aside aside content content content content content content content content content"
         "footer footer footer footer footer footer footer footer footer footer footer footer"
+    }
+
+    .aside-menu-header > button {
+        display: none !important;
     }
 }
 

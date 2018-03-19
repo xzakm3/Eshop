@@ -36,26 +36,35 @@
   .main-container > aside {
     grid-area: aside;
     background-color: white; }
-    .main-container > aside > h3 {
+    .main-container > aside > .aside-menu-header {
       background-color: black;
-      color: white;
-      text-align: center;
-      padding: 10px 0px;
-      margin-bottom: 0px;
-      font-weight: 350; }
-    .main-container > aside > ul {
+      padding: 10px 0px; }
+      .main-container > aside > .aside-menu-header > h3 {
+        color: white;
+        font-weight: 350;
+        display: inline;
+        margin-left: calc(50% - 60px); }
+      .main-container > aside > .aside-menu-header > button {
+        background: rgba(255, 255, 255, 0);
+        color: white;
+        border: none;
+        float: right;
+        margin-right: 25px;
+        margin-top: 3px;
+        display: block; }
+    .main-container > aside ul {
       list-style: none;
       padding: 10px 10px 20px 27px;
       border: 1px solid #ddd; }
-      .main-container > aside > ul > li {
+      .main-container > aside ul > li {
         line-height: 2.2;
         display: block; }
-        .main-container > aside > ul > li > a {
+        .main-container > aside ul > li > a {
           text-decoration: none;
           color: rgba(0, 0, 0, 0.65);
           font-size: 20px;
           font-weight: 330; }
-          .main-container > aside > ul > li > a:hover {
+          .main-container > aside ul > li > a:hover {
             color: rgba(0, 0, 0, 0.95); }
   .main-container > main {
     grid-area: content; }
@@ -91,7 +100,10 @@
 @media (min-width: 850px) {
   .main-container {
     grid-template-columns: repeat(12, 1fr);
-    grid-template-areas: "header header header header header header header header header header header header" "aside aside aside content content content content content content content content content" "footer footer footer footer footer footer footer footer footer footer footer footer"; } }
+    grid-template-areas: "header header header header header header header header header header header header" "aside aside aside content content content content content content content content content" "footer footer footer footer footer footer footer footer footer footer footer footer"; }
+
+  .aside-menu-header > button {
+    display: none !important; } }
 @media (min-width: 1200px) {
   .main-container {
     grid-template-columns: repeat(12, 1fr);
