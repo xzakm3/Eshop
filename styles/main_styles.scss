@@ -2,7 +2,6 @@
 
 .main-container {
     display: grid;
-    grid-gap: 2px;
     grid-template-areas: 
     "header"
     "aside"
@@ -49,10 +48,31 @@
     
     & > aside {
         grid-area: aside;
+        background-color: white;
+        & > h3 {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px 0px;
+            margin-bottom: 0px;
+            font-weight: 350;
+        }
         & > ul {
             list-style: none;
+            padding: 10px 10px 20px 27px;
+            border: 1px solid #ddd;
             & > li {
+                line-height: 2.2;
                 display: block;
+                & > a {
+                    text-decoration: none;
+                    color: rgba(0, 0, 0, 0.65);
+                    font-size: 20px;
+                    font-weight: 330;
+                    &:hover {
+                        color: rgba(0, 0, 0, 0.95);
+                    }
+                }
             }
         }
     }
@@ -63,16 +83,69 @@
     
     & > footer {
         grid-area: footer;
+        background-color: white;
+        & > .row:first-child {
+            margin-top: 35px;
+            margin-bottom: 25px; 
+        }
+        & > .row:last-child {
+            background: rgba(0, 0, 0, 0.05);
+            & > p {
+                padding: 13px;
+                margin: 0 auto;
+            }
+        }
+        .line {
+            border-bottom-width: 1px;
+            border-bottom-color: black;
+            border-bottom-style: solid;
+            width: 50px;
+            margin-top: 15px;
+            margin-bottom: 17px;
+        }
+        ul {
+            list-style: none;
+            padding-left: 5px;
+            & > li {
+                line-height: 1.9;
+                & > a {
+                    text-decoration: none;
+                    color: rgba(0,0,0,.6);
+                    &:hover {
+                        color: rgba(0,0,0,0.9);
+                    }
+                }
+            }
+        }
     }
     
 }
 
-@media(min-width: 680px) {
+@media(min-width: 850px) {
     .main-container {
         grid-template-columns: repeat(12, 1fr);
         grid-template-areas: 
         "header header header header header header header header header header header header"
         "aside aside aside content content content content content content content content content"
         "footer footer footer footer footer footer footer footer footer footer footer footer"
+    }
+}
+
+@media(min-width: 1200px) {
+    .main-container {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas: 
+        "header header header header header header header header header header header header"
+        ". aside aside content content content content content content content content ."
+        "footer footer footer footer footer footer footer footer footer footer footer footer"
+    }
+}
+
+@media(max-width: 767px) {
+    h4 {
+        margin-top: 30px !important;
+    }
+    .line {
+        margin-bottom: 20px !important;
     }
 }
