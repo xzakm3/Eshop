@@ -4,8 +4,6 @@
 .main-container {
   display: grid;
   grid-template-areas: "header" "aside" "content" "footer"; }
-  .main-container > * {
-    background-color: #EAF8BF; }
   .main-container > header {
     height: 300px;
     background: url(../images/header-background.jpeg), no-repeat center center fixed;
@@ -68,6 +66,8 @@
             color: rgba(0, 0, 0, 0.95); }
   .main-container > main {
     grid-area: content; }
+    .main-container > main > #carouselExampleControls > .carousel-inner {
+      height: 440px; }
   .main-container > footer {
     grid-area: footer;
     background-color: white; }
@@ -100,6 +100,7 @@
 @media (min-width: 850px) {
   .main-container {
     grid-template-columns: repeat(12, 1fr);
+    grid-gap: 10px;
     grid-template-areas: "header header header header header header header header header header header header" "aside aside aside content content content content content content content content content" "footer footer footer footer footer footer footer footer footer footer footer footer"; }
 
   .aside-menu-header > button {
