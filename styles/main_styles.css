@@ -66,6 +66,32 @@
             color: rgba(0, 0, 0, 0.95); }
   .main-container > main {
     grid-area: content; }
+    .main-container > main section h1 {
+      text-align: center;
+      margin: 10px 0px;
+      padding: 15px 0px;
+      background: black;
+      color: white; }
+    .main-container > main .product {
+      margin: 0 auto; }
+      .main-container > main .product .card-title {
+        text-align: center;
+        font-size: 17px; }
+      .main-container > main .product .card-subtitle {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 19; }
+      .main-container > main .product .card-price {
+        margin: 20px;
+        text-align: center;
+        font-size: 20px; }
+      .main-container > main .product .card-buttons {
+        padding: 0px;
+        text-align: center; }
+        .main-container > main .product .card-buttons a {
+          width: 95%; }
+        .main-container > main .product .card-buttons .btn-light {
+          border: 1px solid; }
     .main-container > main > #carouselExampleControls > .carousel-inner {
       height: 440px; }
   .main-container > footer {
