@@ -7,6 +7,17 @@
     "aside"
     "content"
     "footer";
+    
+    .btn-secondary {
+        width: 100%;
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+        &:hover {
+            color: white;
+            background-color: black;
+        }
+    }
 
     & > header {
         height: 300px;
@@ -46,7 +57,7 @@
         grid-area: aside;
         background-color: white;
         & > .aside-menu-header {
-            background-color: black;
+            background-color: #cc0000;
             padding: 18px 0px;
             & > h3 {
                 color: white;
@@ -108,13 +119,15 @@
         & > #carouselExampleControls > .carousel-inner {
             height: 440px;
         }
+        h1 {
+            text-align: center;
+            padding: 20px 0px;
+            background: black;
+            color: white;
+        }
         #products, #filtered-products {
             h1 {
-                text-align: center;
                 margin: 10px 0px;
-                padding: 20px 0px;
-                background: black;
-                color: white;
             }
             .product {
                 margin:0 auto;
@@ -175,16 +188,6 @@
             .btn-light {
                 border: 1px solid;
             }
-            .btn-secondary {
-                width: 100%;
-                background-color: white;
-                color: black;
-                border: 1px solid black;
-                &:hover {
-                    color: white;
-                    background-color: black;
-                }
-            }
             .pagination {
                 list-style: none;
                 margin-bottom: 0px;
@@ -197,6 +200,11 @@
                 .page-link {
                     color: black;
                 }
+            }
+        }
+        #registration {    
+            h2 {
+                margin: 20px 0px;
             }
         }
     }
@@ -269,6 +277,12 @@
 @media(max-width: 849px) {
     #filter-panel {
         margin-top: 10px;
+    }
+    
+    #registration {
+        h1 {
+            margin-top: 5px;
+        }
     }
 }
 
