@@ -47,7 +47,7 @@
         background-color: white;
         & > .aside-menu-header {
             background-color: black;
-            padding: 10px 0px;
+            padding: 18px 0px;
             & > h3 {
                 color: white;
                 font-weight: 350;
@@ -64,7 +64,7 @@
                 display: block;
             }
         }
-        ul {
+        & > div > ul {
             list-style: none;
             padding: 10px 10px 20px 27px;
             border: 1px solid #ddd;
@@ -75,29 +75,46 @@
                     text-decoration: none;
                     color: rgba(0, 0, 0, 0.65);
                     font-size: 20px;
-                    font-weight: 330;
+                    font-weight: 350;
                     &:hover {
                         color: rgba(0, 0, 0, 0.95);
                     }
+                }
+                & > .submenu {
+                    list-style-type: none;
+                    padding-left: 5px;
+                    display: none;
+                    -webkit-transition: display 600ms;
+                    transition: display 600ms;
+                    a {
+                        font-size: 15px;
+                        font-weight: 330;
+                        color: rgba(0, 0, 0, 0.65);
+                        &:hover {
+                            text-decoration: none;
+                            color: rgba(0, 0, 0, 1);
+                        }
+                    }
+                }
+                &:hover .submenu {
+                    display: block;
                 }
             }
         }
     }
     
-    & > #landing-page-content {
+    & > main {
         grid-area: content;
         & > #carouselExampleControls > .carousel-inner {
             height: 440px;
         }
-        #products {
-            section {
-                h1 {
-                    text-align: center;
-                    margin: 10px 0px;
-                    padding: 20px 0px;
-                    background: black;
-                    color: white;
-                }
+        #products, #filtered-products {
+            h1 {
+                text-align: center;
+                margin: 10px 0px;
+                padding: 20px 0px;
+                background: black;
+                color: white;
             }
             .product {
                 margin:0 auto;
@@ -121,9 +138,64 @@
                     a {
                         width: 95%;
                     }
-                    .btn-light {
-                        border: 1px solid;
-                    }
+                }
+                .btn-light {
+                    border: 1px solid;
+                }
+                .btn-dark {
+                    background-color: #cc0000;
+                    border-color: #cc0000;
+                }
+            }
+        }
+        #filtered-products {
+            .product {
+                margin: 0 auto;
+                margin-bottom: 15px;
+            }
+            .pagination {
+                list-style: none;
+                margin-bottom: 0px;
+                float: right;
+                .page-item.active .page-link{
+                    background-color: black;
+                    border-color: black;
+                    color: white;
+                }
+                .page-link {
+                    color: black;
+                }
+            }
+        }
+        #filter-panel {
+            padding: 15px;
+            border: 1px solid;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            .btn-light {
+                border: 1px solid;
+            }
+            .btn-secondary {
+                width: 100%;
+                background-color: white;
+                color: black;
+                border: 1px solid black;
+                &:hover {
+                    color: white;
+                    background-color: black;
+                }
+            }
+            .pagination {
+                list-style: none;
+                margin-bottom: 0px;
+                float: right;
+                .page-item.active .page-link{
+                    background-color: black;
+                    border-color: black;
+                    color: white;
+                }
+                .page-link {
+                    color: black;
                 }
             }
         }
@@ -194,11 +266,20 @@
     }
 }
 
+@media(max-width: 849px) {
+    #filter-panel {
+        margin-top: 10px;
+    }
+}
+
 @media(max-width: 767px) {
     h4 {
         margin-top: 30px !important;
     }
     .line {
         margin-bottom: 20px !important;
+    }
+    #filter-panel > div > div:not(:last-child) {
+        margin-bottom: 10px;
     }
 }
