@@ -113,7 +113,8 @@
         background-color: #cc0000;
         border-color: #cc0000; }
     .main-container > main #filtered-products .product {
-      margin: 0px 0px 15px 0px; }
+      margin: 0 auto;
+      margin-bottom: 15px; }
     .main-container > main #filtered-products .pagination {
       list-style: none;
       margin-bottom: 0px;
