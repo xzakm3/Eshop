@@ -36,7 +36,7 @@
     background-color: white; }
     .main-container > aside > .aside-menu-header {
       background-color: black;
-      padding: 10px 0px; }
+      padding: 18px 0px; }
       .main-container > aside > .aside-menu-header > h3 {
         color: white;
         font-weight: 350;
@@ -50,50 +50,105 @@
         margin-right: 25px;
         margin-top: 3px;
         display: block; }
-    .main-container > aside ul {
+    .main-container > aside > div > ul {
       list-style: none;
       padding: 10px 10px 20px 27px;
       border: 1px solid #ddd; }
-      .main-container > aside ul > li {
+      .main-container > aside > div > ul > li {
         line-height: 2.2;
         display: block; }
-        .main-container > aside ul > li > a {
+        .main-container > aside > div > ul > li > a {
           text-decoration: none;
           color: rgba(0, 0, 0, 0.65);
           font-size: 20px;
-          font-weight: 330; }
-          .main-container > aside ul > li > a:hover {
+          font-weight: 350; }
+          .main-container > aside > div > ul > li > a:hover {
             color: rgba(0, 0, 0, 0.95); }
-  .main-container > #landing-page-content {
+        .main-container > aside > div > ul > li > .submenu {
+          list-style-type: none;
+          padding-left: 5px;
+          display: none;
+          -webkit-transition: display 600ms;
+          transition: display 600ms; }
+          .main-container > aside > div > ul > li > .submenu a {
+            font-size: 15px;
+            font-weight: 330;
+            color: rgba(0, 0, 0, 0.65); }
+            .main-container > aside > div > ul > li > .submenu a:hover {
+              text-decoration: none;
+              color: black; }
+        .main-container > aside > div > ul > li:hover .submenu {
+          display: block; }
+  .main-container > main {
     grid-area: content; }
-    .main-container > #landing-page-content > #carouselExampleControls > .carousel-inner {
+    .main-container > main > #carouselExampleControls > .carousel-inner {
       height: 440px; }
-    .main-container > #landing-page-content #products section h1 {
+    .main-container > main #products h1, .main-container > main #filtered-products h1 {
       text-align: center;
       margin: 10px 0px;
       padding: 20px 0px;
       background: black;
       color: white; }
-    .main-container > #landing-page-content #products .product {
+    .main-container > main #products .product, .main-container > main #filtered-products .product {
       margin: 0 auto; }
-      .main-container > #landing-page-content #products .product .card-title {
+      .main-container > main #products .product .card-title, .main-container > main #filtered-products .product .card-title {
         text-align: center;
         font-size: 17px; }
-      .main-container > #landing-page-content #products .product .card-subtitle {
+      .main-container > main #products .product .card-subtitle, .main-container > main #filtered-products .product .card-subtitle {
         text-align: center;
         text-transform: uppercase;
         font-weight: 19; }
-      .main-container > #landing-page-content #products .product .card-price {
+      .main-container > main #products .product .card-price, .main-container > main #filtered-products .product .card-price {
         margin: 20px;
         text-align: center;
         font-size: 20px; }
-      .main-container > #landing-page-content #products .product .card-buttons {
+      .main-container > main #products .product .card-buttons, .main-container > main #filtered-products .product .card-buttons {
         padding: 0px;
         text-align: center; }
-        .main-container > #landing-page-content #products .product .card-buttons a {
+        .main-container > main #products .product .card-buttons a, .main-container > main #filtered-products .product .card-buttons a {
           width: 95%; }
-        .main-container > #landing-page-content #products .product .card-buttons .btn-light {
-          border: 1px solid; }
+      .main-container > main #products .product .btn-light, .main-container > main #filtered-products .product .btn-light {
+        border: 1px solid; }
+      .main-container > main #products .product .btn-dark, .main-container > main #filtered-products .product .btn-dark {
+        background-color: #cc0000;
+        border-color: #cc0000; }
+    .main-container > main #filtered-products .product {
+      margin: 0px 0px 15px 0px; }
+    .main-container > main #filtered-products .pagination {
+      list-style: none;
+      margin-bottom: 0px;
+      float: right; }
+      .main-container > main #filtered-products .pagination .page-item.active .page-link {
+        background-color: black;
+        border-color: black;
+        color: white; }
+      .main-container > main #filtered-products .pagination .page-link {
+        color: black; }
+    .main-container > main #filter-panel {
+      padding: 15px;
+      border: 1px solid;
+      border-radius: 5px;
+      margin-bottom: 10px; }
+      .main-container > main #filter-panel .btn-light {
+        border: 1px solid; }
+      .main-container > main #filter-panel .btn-secondary {
+        width: 100%;
+        background-color: white;
+        color: black;
+        border: 1px solid black; }
+        .main-container > main #filter-panel .btn-secondary:hover {
+          color: white;
+          background-color: black; }
+      .main-container > main #filter-panel .pagination {
+        list-style: none;
+        margin-bottom: 0px;
+        float: right; }
+        .main-container > main #filter-panel .pagination .page-item.active .page-link {
+          background-color: black;
+          border-color: black;
+          color: white; }
+        .main-container > main #filter-panel .pagination .page-link {
+          color: black; }
   .main-container > footer {
     grid-area: footer;
     background-color: white; }
@@ -135,11 +190,17 @@
   .main-container {
     grid-template-columns: repeat(12, 1fr);
     grid-template-areas: "header header header header header header header header header header header header" ". aside aside content content content content content content content content ." "footer footer footer footer footer footer footer footer footer footer footer footer"; } }
+@media (max-width: 849px) {
+  #filter-panel {
+    margin-top: 10px; } }
 @media (max-width: 767px) {
   h4 {
     margin-top: 30px !important; }
 
   .line {
-    margin-bottom: 20px !important; } }
+    margin-bottom: 20px !important; }
+
+  #filter-panel > div > div:not(:last-child) {
+    margin-bottom: 10px; } }
 
 /*# sourceMappingURL=main_styles.css.map */
