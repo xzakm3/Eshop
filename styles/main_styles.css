@@ -17,11 +17,21 @@
     background: url(../images/header-background.jpeg), no-repeat center center fixed;
     background-size: cover;
     grid-area: header; }
+    .main-container > header .special-menu-part {
+      max-width: 1080px;
+      padding: 7px 0px;
+      margin: 0 auto;
+      text-align: right;
+      background: rgba(0, 0, 0, 0.5); }
+      .main-container > header .special-menu-part .login-register {
+        margin-right: 15px;
+        color: white; }
+        .main-container > header .special-menu-part .login-register > a {
+          color: white !important; }
     .main-container > header > nav {
       border-radius: 5px;
       max-width: 1080px;
       margin: 0 auto;
-      margin-top: 5px;
       background: rgba(248, 249, 250, 0.95) !important; }
     .main-container > header .search-row {
       margin-top: 100px; }

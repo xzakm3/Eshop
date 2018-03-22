@@ -24,11 +24,24 @@
         background: url(../images/header-background.jpeg), no-repeat center center fixed;
         background-size: cover;
         grid-area: header;
+        .special-menu-part {
+            max-width: 1080px;
+            padding: 7px 0px;
+            margin: 0 auto;
+            text-align: right;
+            background: rgba(0, 0, 0, 0.50);
+            .login-register {
+                margin-right: 15px;
+                color: white;
+                & > a {
+                    color: white !important;
+                }
+            }
+        }
         & > nav {
             border-radius: 5px;
             max-width: 1080px;
             margin: 0 auto;
-            margin-top: 5px;
             background: rgba(248, 249, 250, 0.95) !important;
         }
         .search-row {
