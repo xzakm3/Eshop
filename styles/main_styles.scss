@@ -138,9 +138,12 @@
             background: black;
             color: white;
         }
-        #products, #filtered-products {
+        #products, #filtered-products, #searched-products {
             h1 {
                 margin: 10px 0px;
+            }
+            h2 {
+                margin: 15px 0px;
             }
             .product {
                 margin:0 auto;
@@ -174,7 +177,7 @@
                 }
             }
         }
-        #filtered-products {
+        #filtered-products, #searched-products {
             .product {
                 margin: 0 auto;
                 margin-bottom: 15px;
