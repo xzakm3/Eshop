@@ -106,43 +106,45 @@
       padding: 20px 0px;
       background: black;
       color: white; }
-    .main-container > main #products h1, .main-container > main #filtered-products h1 {
+    .main-container > main #products h1, .main-container > main #filtered-products h1, .main-container > main #searched-products h1 {
       margin: 10px 0px; }
-    .main-container > main #products .product, .main-container > main #filtered-products .product {
+    .main-container > main #products h2, .main-container > main #filtered-products h2, .main-container > main #searched-products h2 {
+      margin: 15px 0px; }
+    .main-container > main #products .product, .main-container > main #filtered-products .product, .main-container > main #searched-products .product {
       margin: 0 auto; }
-      .main-container > main #products .product .card-title, .main-container > main #filtered-products .product .card-title {
+      .main-container > main #products .product .card-title, .main-container > main #filtered-products .product .card-title, .main-container > main #searched-products .product .card-title {
         text-align: center;
         font-size: 17px; }
-      .main-container > main #products .product .card-subtitle, .main-container > main #filtered-products .product .card-subtitle {
+      .main-container > main #products .product .card-subtitle, .main-container > main #filtered-products .product .card-subtitle, .main-container > main #searched-products .product .card-subtitle {
         text-align: center;
         text-transform: uppercase;
         font-weight: 19; }
-      .main-container > main #products .product .card-price, .main-container > main #filtered-products .product .card-price {
+      .main-container > main #products .product .card-price, .main-container > main #filtered-products .product .card-price, .main-container > main #searched-products .product .card-price {
         margin: 20px;
         text-align: center;
         font-size: 20px; }
-      .main-container > main #products .product .card-buttons, .main-container > main #filtered-products .product .card-buttons {
+      .main-container > main #products .product .card-buttons, .main-container > main #filtered-products .product .card-buttons, .main-container > main #searched-products .product .card-buttons {
         padding: 0px;
         text-align: center; }
-        .main-container > main #products .product .card-buttons a, .main-container > main #filtered-products .product .card-buttons a {
+        .main-container > main #products .product .card-buttons a, .main-container > main #filtered-products .product .card-buttons a, .main-container > main #searched-products .product .card-buttons a {
           width: 95%; }
-      .main-container > main #products .product .btn-light, .main-container > main #filtered-products .product .btn-light {
+      .main-container > main #products .product .btn-light, .main-container > main #filtered-products .product .btn-light, .main-container > main #searched-products .product .btn-light {
         border: 1px solid; }
-      .main-container > main #products .product .btn-dark, .main-container > main #filtered-products .product .btn-dark {
+      .main-container > main #products .product .btn-dark, .main-container > main #filtered-products .product .btn-dark, .main-container > main #searched-products .product .btn-dark {
         background-color: #cc0000;
         border-color: #cc0000; }
-    .main-container > main #filtered-products .product {
+    .main-container > main #filtered-products .product, .main-container > main #searched-products .product {
       margin: 0 auto;
       margin-bottom: 15px; }
-    .main-container > main #filtered-products .pagination {
+    .main-container > main #filtered-products .pagination, .main-container > main #searched-products .pagination {
       list-style: none;
       margin-bottom: 0px;
       float: right; }
-      .main-container > main #filtered-products .pagination .page-item.active .page-link {
+      .main-container > main #filtered-products .pagination .page-item.active .page-link, .main-container > main #searched-products .pagination .page-item.active .page-link {
         background-color: black;
         border-color: black;
         color: white; }
-      .main-container > main #filtered-products .pagination .page-link {
+      .main-container > main #filtered-products .pagination .page-link, .main-container > main #searched-products .pagination .page-link {
         color: black; }
     .main-container > main #filter-panel {
       padding: 15px;
