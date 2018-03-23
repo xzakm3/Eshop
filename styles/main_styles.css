@@ -106,31 +106,31 @@
       padding: 20px 0px;
       background: black;
       color: white; }
-    .main-container > main #products h1, .main-container > main #filtered-products h1, .main-container > main #searched-products h1 {
+    .main-container > main #products h1, .main-container > main #filtered-products h1, .main-container > main #searched-products h1, .main-container > main #product-info h1 {
       margin: 10px 0px; }
-    .main-container > main #products h2, .main-container > main #filtered-products h2, .main-container > main #searched-products h2 {
+    .main-container > main #products h2, .main-container > main #filtered-products h2, .main-container > main #searched-products h2, .main-container > main #product-info h2 {
       margin: 15px 0px; }
-    .main-container > main #products .product, .main-container > main #filtered-products .product, .main-container > main #searched-products .product {
+    .main-container > main #products .product, .main-container > main #filtered-products .product, .main-container > main #searched-products .product, .main-container > main #product-info .product {
       margin: 0 auto; }
-      .main-container > main #products .product .card-title, .main-container > main #filtered-products .product .card-title, .main-container > main #searched-products .product .card-title {
+      .main-container > main #products .product .card-title, .main-container > main #filtered-products .product .card-title, .main-container > main #searched-products .product .card-title, .main-container > main #product-info .product .card-title {
         text-align: center;
         font-size: 17px; }
-      .main-container > main #products .product .card-subtitle, .main-container > main #filtered-products .product .card-subtitle, .main-container > main #searched-products .product .card-subtitle {
+      .main-container > main #products .product .card-subtitle, .main-container > main #filtered-products .product .card-subtitle, .main-container > main #searched-products .product .card-subtitle, .main-container > main #product-info .product .card-subtitle {
         text-align: center;
         text-transform: uppercase;
         font-weight: 19; }
-      .main-container > main #products .product .card-price, .main-container > main #filtered-products .product .card-price, .main-container > main #searched-products .product .card-price {
+      .main-container > main #products .product .card-price, .main-container > main #filtered-products .product .card-price, .main-container > main #searched-products .product .card-price, .main-container > main #product-info .product .card-price {
         margin: 20px;
         text-align: center;
         font-size: 20px; }
-      .main-container > main #products .product .card-buttons, .main-container > main #filtered-products .product .card-buttons, .main-container > main #searched-products .product .card-buttons {
+      .main-container > main #products .product .card-buttons, .main-container > main #filtered-products .product .card-buttons, .main-container > main #searched-products .product .card-buttons, .main-container > main #product-info .product .card-buttons {
         padding: 0px;
         text-align: center; }
-        .main-container > main #products .product .card-buttons a, .main-container > main #filtered-products .product .card-buttons a, .main-container > main #searched-products .product .card-buttons a {
+        .main-container > main #products .product .card-buttons a, .main-container > main #filtered-products .product .card-buttons a, .main-container > main #searched-products .product .card-buttons a, .main-container > main #product-info .product .card-buttons a {
           width: 95%; }
-      .main-container > main #products .product .btn-light, .main-container > main #filtered-products .product .btn-light, .main-container > main #searched-products .product .btn-light {
+      .main-container > main #products .product .btn-light, .main-container > main #filtered-products .product .btn-light, .main-container > main #searched-products .product .btn-light, .main-container > main #product-info .product .btn-light {
         border: 1px solid; }
-      .main-container > main #products .product .btn-dark, .main-container > main #filtered-products .product .btn-dark, .main-container > main #searched-products .product .btn-dark {
+      .main-container > main #products .product .btn-dark, .main-container > main #filtered-products .product .btn-dark, .main-container > main #searched-products .product .btn-dark, .main-container > main #product-info .product .btn-dark {
         background-color: #cc0000;
         border-color: #cc0000; }
     .main-container > main #filtered-products .product, .main-container > main #searched-products .product {
@@ -165,6 +165,15 @@
           color: black; }
     .main-container > main #registration h2 {
       margin: 20px 0px; }
+    .main-container > main #product-info h2 {
+      text-align: center; }
+    .main-container > main #product-info form .form-group {
+      margin-left: 0px !important;
+      margin-right: 5px !important; }
+    .main-container > main #product-info form #inputCount {
+      width: 60px; }
+    .main-container > main #product-info form .btn-secondary {
+      width: 70%; }
   .main-container > footer {
     grid-area: footer;
     background-color: white; }
@@ -220,6 +229,11 @@
     margin-bottom: 20px !important; }
 
   #filter-panel > div > div:not(:last-child) {
-    margin-bottom: 10px; } }
+    margin-bottom: 10px; }
+
+  #product-info .structural {
+    text-align: center; }
+    #product-info .structural form .form-group {
+      margin-left: calc(15%) !important; } }
 
 /*# sourceMappingURL=main_styles.css.map */
