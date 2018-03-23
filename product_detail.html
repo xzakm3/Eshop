@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        MuzikaLand
+    </title>
+    <link href="styles/main_styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="javascript/aside-menu.js"></script>
+</head>
+
+<body>
+    <div class="main-container">
+        <header>
+            <div class="special-menu-part">
+                <span class="login-register">
+                    <a href="#" data-toggle="modal" data-target="#exampleModal">Prihlásiť sa</a> |
+                    <a href="#">Registrovať</a>
+                </span>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo/logo.png" width="130px" height="auto" alt="Logo">
+                    </a>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Domov
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">O nás</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Poradňa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <i class="fas fa-shopping-cart fa-2x"></i>
+                </div>
+            </nav>
+
+            <div class="row search-row">
+                <div class="col-md-4 offset-md-4 col-sm-10 offset-sm-1">
+                    <form class="form">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn search-button" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </header>
+        <aside>
+            <div class="aside-menu-header">
+                <h3>Kategórie</h3>
+                <button type="button" data-toggle="collapse" data-target="#asideNavbarSupportedContent" aria-controls="asideNavbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-angle-down fa-2x"></i>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="asideNavbarSupportedContent">
+                <ul>
+                    <li class="nav-item">
+                        <a href="#">Gitary</a>
+                        <ul class="submenu">
+                            <li class="nav-item">
+                                <a href="#">Klasické gitary</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Akustické gitary</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Elektroakustické gitary</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Ľavoruké gitary</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Guitalele</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Ukulele</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Banjo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Mandolína</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Gitarové príslušenstvo</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Basgitary</a>
+                        <ul class="submenu">
+                            <li class="nav-item">
+                                <a href="#">Elektrické basgitary</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Akustické basgitary</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Basgitarové príslušenstvo</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Klávesové nástroje</a>
+                        <ul class="submenu">
+                            <li class="nav-item">
+                                <a href="#">Keyboardy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Digitálne piana</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Stage piana</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Syntetizátory - Aranžéry</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Akustické piana</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Organy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Akordeony</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">MIDI kontrolery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Príslušenstvo ku klávesovým nástrojom</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Bicie nástroje</a>
+                        <ul class="submenu">
+                            <li class="nav-item">
+                                <a href="#">Bicie sady</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Perkusie a rytmické nástroje</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Činely</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Blany</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Paličky</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Príslušenstvo k bicím</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Automatické bicie</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Dychové nástroje</a>
+                        <ul class="submenu">
+                            <li class="nav-item">
+                                <a href="#">Flauty</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Fúkacie harmoniky</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Trúbky</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Saxofóny</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Klarinety</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Trombóny</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Tuby</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Tenory - Baskrídlovky</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Barytóny</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Lesné rohy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Ostatné dychové nástroje</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Príslušenstvo k dychovým nástrojom</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Sláčikové nástroje</a>
+                        <ul class="submenu">
+                            <li class="nav-item">
+                                <a href="#">Husle a husľové komplety</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Violy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Violončelá</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Kontrabasy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Príslušenstvo k sláčikovým nástrojom</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Štúdio</a>
+                        <ul class="submenu">
+                            <li class="nav-item">
+                                <a href="#">Reproboxy pasívne</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Reproboxy aktívne</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Malé prenosné P.A. systémy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Kompletné P.A. systémy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Koncové zosilňovače</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Mixážne pulty</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Mikrofóny</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Digitálne rekordéry - záznamníky</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Domáce nahrávacie štúdiá</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Slúchadlá</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Bezdrátové systémy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Zvukové karty a konvertory</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Príslušenstvo k zvukovej technike</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Príslušenstvo</a>
+                        <ul class="submenu">
+                            <li class="nav-item">
+                                <a href="#">Stojany a vešiaky</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Stoličky a lavičky</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Struny</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Ladičky a metronómy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Káble</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Povlaky a púzdra</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Remene</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">napájacie zdroje</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Kozmetika a doplnky</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Svetlá</a>
+                        <ul class="submenu">
+                            <li class="nav-item">
+                                <a href="#">Svetelné efekty</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Svetelné zostavy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Osvetlenie notových a divadelných pultov</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Stojany na svetlá</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <main>
+            <section id="product-info">
+                <section class="row">
+                    <div class="col-md-8">
+                        <img src="images/product-photo-detail.jpeg" alt="Akusticka gitara" width="100%" height>
+                    </div>
+                    <div class="col-md-4 structural">
+                        <h4>YAMAHA C40 KLASICKÁ GITARA</h4>
+                        <p>
+                            <b>Dostupnosť:</b> Skladom</p>
+                        <p>
+                            <b>Kód:</b> 41452365</p>
+                        <p>
+                            <b>Značka:</b> CORT</p>
+                        <p>
+                            <b>Cena s DPH:</b> 140.00€</p>
+                        <p>
+                            <b>Cena bez DPH:</b> 112.00€</p>
+                        <br>
+                        <p>
+                            <b>Na sklade:</b>
+                            <em>5</em> ks
+                        </p>
+                        <form class="form-inline">
+                            <div class="form-group mx-sm-3 mb-2">
+                                <label for="inputCount" class="sr-only">Password</label>
+                                <input type="number" class="form-control" id="inputCount" placeholder="1">
+                            </div>
+                            <button type="submit" class="btn btn-secondary mb-2">
+                                <i class="fas fa-shopping-cart fa"></i> Vlož to košíka
+                            </button>
+                        </form>
+                    </div>
+                </section>
+                <section class="card">
+                    <div class="card-header">
+                        Popis
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                            type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                            but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
+                            in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                            with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                </section>
+                <section>
+                    <h2>Podobné produkty</h2>
+                    <div class="row">
+                        <div class="product col-lg-3 col-md-6 col-sm-6 col-7">
+                            <div class="card">
+                                <img class="card-img-top" src="images/product-photo.jpeg" alt="Card image cap" width="150" height="auto">
+                                <div class="card-body">
+                                    <h5 class="card-title">YAMAHA C40 KLASICKÁ GITARA</h5>
+                                    <h6 class="card-subtitle">cort</h6>
+                                    <p class="card-price">11.25€</p>
+                                    <div class="row">
+                                        <div class="col-md-6 card-buttons">
+                                            <a href="#" class="btn btn-dark">Kúpiť</a>
+                                        </div>
+                                        <div class="col-md-6 card-buttons">
+                                            <a href="#" class="btn btn-light">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product col-lg-3 col-md-6 col-sm-6 col-7">
+                            <div class="product card">
+                                <img class="card-img-top" src="images/product-photo.jpeg" alt="Card image cap" width="150" height="auto">
+                                <div class="card-body">
+                                    <h5 class="card-title">YAMAHA C40 KLASICKÁ GITARA</h5>
+                                    <h6 class="card-subtitle">cort</h6>
+                                    <p class="card-price">11.25€</p>
+                                    <div class="row">
+                                        <div class="col-md-6 card-buttons">
+                                            <a href="#" class="btn btn-dark">Kúpiť</a>
+                                        </div>
+                                        <div class="col-md-6 card-buttons">
+                                            <a href="#" class="btn btn-light">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product col-lg-3 col-md-6 col-sm-6 col-7">
+                            <div class="product card">
+                                <img class="card-img-top" src="images/product-photo.jpeg" alt="Card image cap" width="150" height="auto">
+                                <div class="card-body">
+                                    <h5 class="card-title">YAMAHA C40 KLASICKÁ GITARA</h5>
+                                    <h6 class="card-subtitle">cort</h6>
+                                    <p class="card-price">11.25€</p>
+                                    <div class="row">
+                                        <div class="col-md-6 card-buttons">
+                                            <a href="#" class="btn btn-dark">Kúpiť</a>
+                                        </div>
+                                        <div class="col-md-6 card-buttons">
+                                            <a href="#" class="btn btn-light">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product col-lg-3 col-md-6 col-sm-6 col-7">
+                            <div class="product card">
+                                <img class="card-img-top" src="images/product-photo.jpeg" alt="Card image cap" width="150" height="auto">
+                                <div class="card-body">
+                                    <h5 class="card-title">YAMAHA C40 KLASICKÁ GITARA</h5>
+                                    <h6 class="card-subtitle">cort</h6>
+                                    <p class="card-price">11.25€</p>
+                                    <div class="row">
+                                        <div class="col-md-6 card-buttons">
+                                            <a href="#" class="btn btn-dark">Kúpiť</a>
+                                        </div>
+                                        <div class="col-md-6 card-buttons">
+                                            <a href="#" class="btn btn-light">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Prihlásenie</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="loginName" class="col-form-label">Email:</label>
+                                    <input type="text" class="form-control" id="loginName">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword" class="col-form-label">Heslo:</label>
+                                    <input type="password" class="form-control" id="inputPassword">
+                                    </textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary">Prihlásiť</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="row">
+                <div class="col-md-4 col-sm-12" align="center">
+                    <img src="images/logo/logo.png" width="150px" height="auto" alt="Logo">
+                    <p>
+                        <b>E-mail:</b> info@muzikaland.com</p>
+                    <p>
+                        <b>Adresa:</b> Ilkovičová 2</p>
+                    <p>
+                        <b>Telefón:</b> +421854123</p>
+                </div>
+                <div class="col-md-4  col-sm-12" align="center">
+                    <h4>Navigácia</h4>
+                    <div class="line"></div>
+                    <ul>
+                        <li>
+                            <a href="#">Úvod</a>
+                        </li>
+                        <li>
+                            <a href="#">Recenzie</a>
+                        </li>
+                        <li>
+                            <a href="#">O nás</a>
+                        </li>
+                        <li>
+                            <a href="#">Poradňa</a>
+                        </li>
+                        <li>
+                            <a href="#">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4  col-sm-12" align="center">
+                    <h4>Odkazy</h4>
+                    <div class="line"></div>
+                    <ul>
+                        <li>
+                            <a href="#">Kamenné predajne</a>
+                        </li>
+                        <li>
+                            <a href="#">Prečo práve u nás</a>
+                        </li>
+                        <li>
+                            <a href="#">Možnosti platby</a>
+                        </li>
+                        <li>
+                            <a href="#">Obchodné podmienky</a>
+                        </li>
+                        <li>
+                            <a href="#">Sociálne siete</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>&copy; 2018 Hudobné nástroje
+                    <i>Muzikaland</i> | Všetky práve vyhradené</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -138,7 +138,7 @@
             background: black;
             color: white;
         }
-        #products, #filtered-products, #searched-products {
+        #products, #filtered-products, #searched-products, #product-info {
             h1 {
                 margin: 10px 0px;
             }
@@ -146,7 +146,7 @@
                 margin: 15px 0px;
             }
             .product {
-                margin:0 auto;
+                margin: 0 auto;
                 .card-title {
                     text-align: center;
                     font-size: 17px;
@@ -221,6 +221,23 @@
         #registration {    
             h2 {
                 margin: 20px 0px;
+            }
+        }
+        #product-info {
+            h2 {
+                text-align: center;
+            }
+            form {
+                .form-group {
+                    margin-left: 0px !important;
+                    margin-right: 5px !important;
+                }
+                #inputCount {
+                    width: 60px;
+                }
+                .btn-secondary {
+                    width: 70%;
+                }
             }
         }
     }
@@ -311,5 +328,15 @@
     }
     #filter-panel > div > div:not(:last-child) {
         margin-bottom: 10px;
+    }
+    #product-info {
+        .structural {
+            text-align: center;
+            form {
+                .form-group {
+                    margin-left: calc(15%) !important;
+                }
+            }
+        }
     }
 }
