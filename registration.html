@@ -348,260 +348,97 @@
             </div>
         </aside>
         <main id="landing-page-content">
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="images/slider/guitar.jpeg" alt="First slide">
+            <section id="registration">
+                <h1>Registrácia</h1>
+                <form>
+                    <h2>Prihlasovacie údaje</h2>
+                    <div class="row">
+                        <div class="form-group col-md-4 col-sm-4">
+                            <label for="inputEmail4">Email *</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+                        </div>
+                        <div class="form-group col-md-4 col-sm-4">
+                            <label for="inputPassword4">Heslo *</label>
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="Password" required>
+                        </div>
+                        <div class="form-group col-md-4 col-sm-4">
+                            <label for="inputPassword4">Zopakovať heslo *</label>
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="Password" required>
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="images/slider/piano.jpeg" alt="Second slide">
+                    <h2>Fakturačné údaje</h2>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="inputName">Meno *</label>
+                            <input type="text" class="form-control" id="inputName" placeholder="Meno" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputSurname">Priezvisko *</label>
+                            <input type="text" class="form-control" id="inputSurname" placeholder="Priezvisko" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputPhoneNumber">Telefónne číslo *</label>
+                            <input type="text" class="form-control" id="inputPhoneNumber" placeholder="e.g. +421 902 902 902" required>
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="images/slider/drums.jpeg" alt="Third slide">
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="inputAddress">Ulica a číslo *</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="e.g. Jašíková 21" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputCity">Mesto *</label>
+                            <input type="text" class="form-control" id="inputCity" placeholder="e.g. Bratislava" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputPSC">PSČ *</label>
+                            <input type="number" class="form-control" id="inputPSC" placeholder="e.g. 82103" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="inputICO">IČO</label>
+                            <input type="number" class="form-control" id="inputICO" placeholder="e.g. 12345678">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputDIC">DIČ *</label>
+                            <input type="number" class="form-control" id="inputDIC" placeholder="e.g. 1234512345">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputICDPH">IČ DPH</label>
+                            <input type="text" class="form-control" id="inputICDPH" placeholder="e.g. SK1234512345">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-secondary">Sign in</button>
+                </form>
+            </section>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Prihlásenie</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="loginName" class="col-form-label">Email:</label>
+                                    <input type="text" class="form-control" id="loginName">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword" class="col-form-label">Heslo:</label>
+                                    <input type="password" class="form-control" id="inputPassword"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary">Prihlásiť</button>
+                        </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
-            <section id="products">
-                <section>
-                    <h1>Novinky</h1>
-                    <div class="row">
-                        <div class="product col-lg-3 col-md-6 col-sm-6 col-7">
-                            <div class="card">
-                                <img class="card-img-top" src="images/product-photo.jpeg" alt="Card image cap" width="150" height="auto">
-                                <div class="card-body">
-                                    <h5 class="card-title">YAMAHA C40 KLASICKÁ GITARA</h5>
-                                    <h6 class="card-subtitle">cort</h6>
-                                    <p class="card-price">11.25€</p>
-                                    <div class="row">
-                                        <div class="col-md-6 card-buttons">
-                                            <a href="#" class="btn btn-dark">Kúpiť</a>
-                                        </div>
-                                        <div class="col-md-6 card-buttons">
-                                            <a href="#" class="btn btn-light">Detail</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product col-lg-3 col-md-6 col-sm-6 col-7">
-                            <div class="product card">
-                                <img class="card-img-top" src="images/product-photo.jpeg" alt="Card image cap" width="150" height="auto">
-                                <div class="card-body">
-                                    <h5 class="card-title">YAMAHA C40 KLASICKÁ GITARA</h5>
-                                    <h6 class="card-subtitle">cort</h6>
-                                    <p class="card-price">11.25€</p>
-                                    <div class="row">
-                                        <div class="col-md-6 card-buttons">
-                                            <a href="#" class="btn btn-dark">Kúpiť</a>
-                                        </div>
-                                        <div class="col-md-6 card-buttons">
-                                            <a href="#" class="btn btn-light">Detail</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product col-lg-3 col-md-6 col-sm-6 col-7">
-                            <div class="product card">
-                                <img class="card-img-top" src="images/product-photo.jpeg" alt="Card image cap" width="150" height="auto">
-                                <div class="card-body">
-                                    <h5 class="card-title">YAMAHA C40 KLASICKÁ GITARA</h5>
-                                    <h6 class="card-subtitle">cort</h6>
-                                    <p class="card-price">11.25€</p>
-                                    <div class="row">
-                                        <div class="col-md-6 card-buttons">
-                                            <a href="#" class="btn btn-dark">Kúpiť</a>
-                                        </div>
-                                        <div class="col-md-6 card-buttons">
-                                            <a href="#" class="btn btn-light">Detail</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product col-lg-3 col-md-6 col-sm-6 col-7">
-                            <div class="product card">
-                                <img class="card-img-top" src="images/product-photo.jpeg" alt="Card image cap" width="150" height="auto">
-                                <div class="card-body">
-                                    <h5 class="card-title">YAMAHA C40 KLASICKÁ GITARA</h5>
-                                    <h6 class="card-subtitle">cort</h6>
-                                    <p class="card-price">11.25€</p>
-                                    <div class="row">
-                                        <div class="col-md-6 card-buttons">
-                                            <a href="#" class="btn btn-dark">Kúpiť</a>
-                                        </div>
-                                        <div class="col-md-6 card-buttons">
-                                            <a href="#" class="btn btn-light">Detail</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <h1>Odporúčané pre Vás</h1>
-                    <div class="row">
-                        <div class="product col-lg-3 col-md-6 col-sm-6 col-7">
-                            <div class="card">
-                                <img class="card-img-top" src="images/product-photo.jpeg" alt="Card image cap" width="150" height="auto">
-                                <div class="card-body">
-                                    <h5 class="card-title">YAMAHA C40 KLASICKÁ GITARA</h5>
-                                    <h6 class="card-subtitle">cort</h6>
-                                    <p class="card-price">11.25€</p>
-                                    <div class="row">
-                                        <div class="col-md-6 card-buttons">
-                                            <a href="#" class="btn btn-dark">Kúpiť</a>
-                                        </div>
-                                        <div class="col-md-6 card-buttons">
-                                            <a href="#" class="btn btn-light">Detail</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product col-lg-3 col-md-6 col-sm-6 col-7">
-                            <div class="product card">
-                                <img class="card-img-top" src="images/product-photo.jpeg" alt="Card image cap" width="150" height="auto">
-                                <div class="card-body">
-                                    <h5 class="card-title">YAMAHA C40 KLASICKÁ GITARA</h5>
-                                    <h6 class="card-subtitle">cort</h6>
-                                    <p class="card-price">11.25€</p>
-                                    <div class="row">
-                                        <div class="col-md-6 card-buttons">
-                                            <a href="#" class="btn btn-dark">Kúpiť</a>
-                                        </div>
-                                        <div class="col-md-6 card-buttons">
-                                            <a href="#" class="btn btn-light">Detail</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product col-lg-3 col-md-6 col-sm-6 col-7">
-                            <div class="product card">
-                                <img class="card-img-top" src="images/product-photo.jpeg" alt="Card image cap" width="150" height="auto">
-                                <div class="card-body">
-                                    <h5 class="card-title">YAMAHA C40 KLASICKÁ GITARA</h5>
-                                    <h6 class="card-subtitle">cort</h6>
-                                    <p class="card-price">11.25€</p>
-                                    <div class="row">
-                                        <div class="col-md-6 card-buttons">
-                                            <a href="#" class="btn btn-dark">Kúpiť</a>
-                                        </div>
-                                        <div class="col-md-6 card-buttons">
-                                            <a href="#" class="btn btn-light">Detail</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product col-lg-3 col-md-6 col-sm-6 col-7">
-                            <div class="product card">
-                                <img class="card-img-top" src="images/product-photo.jpeg" alt="Card image cap" width="150" height="auto">
-                                <div class="card-body">
-                                    <h5 class="card-title">YAMAHA C40 KLASICKÁ GITARA</h5>
-                                    <h6 class="card-subtitle">cort</h6>
-                                    <p class="card-price">11.25€</p>
-                                    <div class="row">
-                                        <div class="col-md-6 card-buttons">
-                                            <a href="#" class="btn btn-dark">Kúpiť</a>
-                                        </div>
-                                        <div class="col-md-6 card-buttons">
-                                            <a href="#" class="btn btn-light">Detail</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <h1>Najpredávanejšie</h1>
-                    <div class="row">
-                        <div class="product col-lg-3 col-md-6 col-sm-6 col-7">
-                            <div class="card">
-                                <img class="card-img-top" src="images/product-photo.jpeg" alt="Card image cap" width="150" height="auto">
-                                <div class="card-body">
-                                    <h5 class="card-title">YAMAHA C40 KLASICKÁ GITARA</h5>
-                                    <h6 class="card-subtitle">cort</h6>
-                                    <p class="card-price">11.25€</p>
-                                    <div class="row">
-                                        <div class="col-md-6 card-buttons">
-                                            <a href="#" class="btn btn-dark">Kúpiť</a>
-                                        </div>
-                                        <div class="col-md-6 card-buttons">
-                                            <a href="#" class="btn btn-light">Detail</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product col-lg-3 col-md-6 col-sm-6 col-7">
-                            <div class="product card">
-                                <img class="card-img-top" src="images/product-photo.jpeg" alt="Card image cap" width="150" height="auto">
-                                <div class="card-body">
-                                    <h5 class="card-title">YAMAHA C40 KLASICKÁ GITARA</h5>
-                                    <h6 class="card-subtitle">cort</h6>
-                                    <p class="card-price">11.25€</p>
-                                    <div class="row">
-                                        <div class="col-md-6 card-buttons">
-                                            <a href="#" class="btn btn-dark">Kúpiť</a>
-                                        </div>
-                                        <div class="col-md-6 card-buttons">
-                                            <a href="#" class="btn btn-light">Detail</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product col-lg-3 col-md-6 col-sm-6 col-7">
-                            <div class="product card">
-                                <img class="card-img-top" src="images/product-photo.jpeg" alt="Card image cap" width="150" height="auto">
-                                <div class="card-body">
-                                    <h5 class="card-title">YAMAHA C40 KLASICKÁ GITARA</h5>
-                                    <h6 class="card-subtitle">cort</h6>
-                                    <p class="card-price">11.25€</p>
-                                    <div class="row">
-                                        <div class="col-md-6 card-buttons">
-                                            <a href="#" class="btn btn-dark">Kúpiť</a>
-                                        </div>
-                                        <div class="col-md-6 card-buttons">
-                                            <a href="#" class="btn btn-light">Detail</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product col-lg-3 col-md-6 col-sm-6 col-7">
-                            <div class="product card">
-                                <img class="card-img-top" src="images/product-photo.jpeg" alt="Card image cap" width="150" height="auto">
-                                <div class="card-body">
-                                    <h5 class="card-title">YAMAHA C40 KLASICKÁ GITARA</h5>
-                                    <h6 class="card-subtitle">cort</h6>
-                                    <p class="card-price">11.25€</p>
-                                    <div class="row">
-                                        <div class="col-md-6 card-buttons">
-                                            <a href="#" class="btn btn-dark">Kúpiť</a>
-                                        </div>
-                                        <div class="col-md-6 card-buttons">
-                                            <a href="#" class="btn btn-light">Detail</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </section>
         </main>
         <footer>
             <div class="row">
