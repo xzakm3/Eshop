@@ -174,6 +174,36 @@
       width: 60px; }
     .main-container > main #product-info form .btn-secondary {
       width: 70%; }
+    .main-container > main #shopping-cart-content > #shopping-steps {
+      margin-bottom: 5px;
+      border-radius: 5px;
+      background: rgba(0, 0, 0, 0.125);
+      text-align: center;
+      padding: 15px 0px; }
+      .main-container > main #shopping-cart-content > #shopping-steps #shopping-cart, .main-container > main #shopping-cart-content > #shopping-steps #delivery-and-payment, .main-container > main #shopping-cart-content > #shopping-steps #last-control, .main-container > main #shopping-cart-content > #shopping-steps #order-confirmation {
+        margin: 0px 15px; }
+    .main-container > main #shopping-cart-content > table thead > tr > th {
+      border-top: 0px; }
+    .main-container > main #shopping-cart-content > table tbody td {
+      vertical-align: middle; }
+      .main-container > main #shopping-cart-content > table tbody td .fa-times {
+        color: #cc0000 !important; }
+      .main-container > main #shopping-cart-content > table tbody td .quantity-plus, .main-container > main #shopping-cart-content > table tbody td .quantity-minus {
+        background-color: black;
+        padding: 1px 6px; }
+        .main-container > main #shopping-cart-content > table tbody td .quantity-plus .fa-plus, .main-container > main #shopping-cart-content > table tbody td .quantity-plus .fa-minus, .main-container > main #shopping-cart-content > table tbody td .quantity-minus .fa-plus, .main-container > main #shopping-cart-content > table tbody td .quantity-minus .fa-minus {
+          color: white; }
+      .main-container > main #shopping-cart-content > table tbody td p {
+        margin-bottom: 3px; }
+      .main-container > main #shopping-cart-content > table tbody td .price-with-DPH {
+        font-size: 25px;
+        font-weight: 600; }
+    .main-container > main #shopping-cart-content > #summary-buttons .back > a, .main-container > main #shopping-cart-content > #summary-buttons .next > a {
+      width: 60%; }
+    .main-container > main #shopping-cart-content > #summary-buttons .back {
+      text-align: left; }
+    .main-container > main #shopping-cart-content > #summary-buttons .next {
+      text-align: right; }
   .main-container > footer {
     grid-area: footer;
     background-color: white; }
@@ -298,6 +328,20 @@
     text-align: center; }
     #product-info .structural form .form-group {
       margin-left: calc(15%) !important; } }
+@media (max-width: 849px) {
+  #shopping-cart-content #shopping-steps {
+    margin-top: 5px; }
+  #shopping-cart-content thead {
+    display: none; }
+  #shopping-cart-content tbody > tr > th, #shopping-cart-content tbody > tr > td {
+    text-align: center;
+    display: block; }
+  #shopping-cart-content tbody > tr > td {
+    border: none; }
+  #shopping-cart-content #summary-buttons .back, #shopping-cart-content #summary-buttons .next {
+    margin: 1px 0px; }
+    #shopping-cart-content #summary-buttons .back > a, #shopping-cart-content #summary-buttons .next > a {
+      width: 100% !important; } }
 .shown {
   display: block !important; }
 

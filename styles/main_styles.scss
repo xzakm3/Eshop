@@ -240,8 +240,57 @@
                 }
             }
         }
+        #shopping-cart-content {
+            & > #shopping-steps {
+                margin-bottom: 5px;
+                border-radius: 5px;
+                background: rgba(0, 0, 0, 0.125);
+                text-align: center;
+                padding: 15px 0px;
+                #shopping-cart, #delivery-and-payment, #last-control, #order-confirmation {
+                    margin: 0px 15px;
+                }
+            }
+            & > table {
+                thead > tr > th {
+                    border-top: 0px;
+                }
+                tbody {
+                    td {
+                        vertical-align: middle; 
+                        .fa-times {
+                            color: #cc0000 !important;
+                        }
+                        .quantity-plus, .quantity-minus {
+                            background-color: black;
+                            padding: 1px 6px;
+                            .fa-plus, .fa-minus {
+                                color: white;
+                            }
+                        }
+                        p {
+                            margin-bottom: 3px;
+                        }
+                        .price-with-DPH {
+                            font-size: 25px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+            & > #summary-buttons {
+                .back > a, .next > a {
+                    width: 60%;
+                }
+                .back {
+                    text-align: left;
+                }
+                .next {
+                    text-align: right;
+                }
+            }
+        }
     }
-    
     & > footer {
         grid-area: footer;
         background-color: white;
@@ -418,6 +467,33 @@
             form {
                 .form-group {
                     margin-left: calc(15%) !important;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 849px) {
+    #shopping-cart-content {
+        #shopping-steps {
+            margin-top: 5px;
+        }
+        thead {
+            display: none;
+        }
+        tbody > tr {
+            & > th, & > td{
+                text-align: center;
+                display: block;
+            }
+            & > td {
+                border: none;
+            }
+        }
+        #summary-buttons {
+            .back, .next {
+                margin: 1px 0px;
+                & > a { 
+                    width: 100% !important;
                 }
             }
         }
