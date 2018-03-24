@@ -10,6 +10,8 @@
       left: -76px;
       top: 35px;
       position: absolute; }
+  .main-container > main, .main-container > aside {
+    min-height: auto !important; }
   .main-container > aside {
     grid-area: aside;
     background: #384042;
