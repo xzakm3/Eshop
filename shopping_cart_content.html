@@ -347,70 +347,97 @@
                 </ul>
             </div>
         </aside>
-        <main id="landing-page-content">
-            <section id="registration">
-                <h1>Registrácia</h1>
-                <form>
-                    <h2>Prihlasovacie údaje</h2>
+        <main>
+            <section id="shopping-cart-content">
+                <section id="shopping-steps">
+                    <span id="shopping-cart"><b>Nákupný košík</b></span>
+                    <i class="fas fa-chevron-right"></i>
+                    <span id="delivery-and-payment">Doručenie a platba</span>
+                    <i class="fas fa-chevron-right"></i>
+                    <span id="last-control">Posledná kontrola</span>
+                    <i class="fas fa-chevron-right"></i>
+                    <span id="order-confirmation">Potvrdenie objednávky</span>
+                </section>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Položka</th>
+                            <th scope="col">Jednotková cena</th>
+                            <th scope="col">Množstvo</th>
+                            <th scope="col">Cena spolu</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">
+                                <img src="images/product-photo-detail.jpeg" width="100" height="auto">
+                            </th>
+                            <td>YAMAHA C40 KLASICKÁ GITARA</td>
+                            <td>250.00 €</td>
+                            <td>
+                                <a class="btn quantity-minus">
+                                    <i class="fas fa-minus"></i>
+                                </a>
+                                2
+                                <a class="btn quantity-plus">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                            </td>
+                            <td>500.00€</td>
+                            <td>
+                                <i class="fas fa-times"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <img src="images/product-photo.jpeg" width="100" height="auto">
+                            </th>
+                            <td>CORT X20 KLASICKÁ AKUSTICKÁ GITARA</td>
+                            <td>250.00 €</td>
+                            <td>
+                                <a class="btn quantity-minus">
+                                    <i class="fas fa-minus"></i>
+                                </a>
+                                1
+                                <a class="btn quantity-plus">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                            </td>
+                            <td>250.00€</td>
+                            <td>
+                                <i class="fas fa-times"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                            </th>
+                            <td></td>
+                            <td>
+                                <p>Celkom bez DPH</p>
+                                <p class="price-with-DPH">Celkom s DPH</p>
+                            </td>
+                            <td>
+                            </td>
+                            <td></td>
+                            <td>
+                                <p>600 €</p>
+                                <p class="price-with-DPH">750 €</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <section id="summary-buttons">
                     <div class="row">
-                        <div class="form-group col-md-4 col-sm-4">
-                            <label for="inputEmail4">Email *</label>
-                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+                        <div class="col-md-6 col-sm-12 back">
+                            <a href="#" class="btn btn-secondary"><i class="fas fa-chevron-left"></i> Pokračovať v nákupe</a>
                         </div>
-                        <div class="form-group col-md-4 col-sm-4">
-                            <label for="inputPassword4">Heslo *</label>
-                            <input type="password" class="form-control" id="inputPassword4" placeholder="Password" required>
-                        </div>
-                        <div class="form-group col-md-4 col-sm-4">
-                            <label for="inputPassword4">Zopakovať heslo *</label>
-                            <input type="password" class="form-control" id="inputPassword4" placeholder="Password" required>
+                        <div class="col-md-6 col-sm-12 next">
+                            <a href="#" class="btn btn-danger">Prejsť k objednávke <i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    <h2>Fakturačné údaje</h2>
-                    <div class="form-row">
-                        <div class="form-group col-md-4">
-                            <label for="inputName">Meno *</label>
-                            <input type="text" class="form-control" id="inputName" placeholder="Meno" required>
-                        </div>
-                        <div class="form-group col-md-4">
-                            <label for="inputSurname">Priezvisko *</label>
-                            <input type="text" class="form-control" id="inputSurname" placeholder="Priezvisko" required>
-                        </div>
-                        <div class="form-group col-md-4">
-                            <label for="inputPhoneNumber">Telefónne číslo *</label>
-                            <input type="text" class="form-control" id="inputPhoneNumber" placeholder="e.g. +421 902 902 902" required>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-4">
-                            <label for="inputAddress">Ulica a číslo *</label>
-                            <input type="text" class="form-control" id="inputAddress" placeholder="e.g. Jašíková 21" required>
-                        </div>
-                        <div class="form-group col-md-4">
-                            <label for="inputCity">Mesto *</label>
-                            <input type="text" class="form-control" id="inputCity" placeholder="e.g. Bratislava" required>
-                        </div>
-                        <div class="form-group col-md-4">
-                            <label for="inputPSC">PSČ *</label>
-                            <input type="number" class="form-control" id="inputPSC" placeholder="e.g. 82103" required>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-4">
-                            <label for="inputICO">IČO</label>
-                            <input type="number" class="form-control" id="inputICO" placeholder="e.g. 12345678">
-                        </div>
-                        <div class="form-group col-md-4">
-                            <label for="inputDIC">DIČ *</label>
-                            <input type="number" class="form-control" id="inputDIC" placeholder="e.g. 1234512345">
-                        </div>
-                        <div class="form-group col-md-4">
-                            <label for="inputICDPH">IČ DPH</label>
-                            <input type="text" class="form-control" id="inputICDPH" placeholder="e.g. SK1234512345">
-                        </div>
-                    </div>
-                    <button type="submit" class="btn btn-secondary">Sign in</button>
-                </form>
+                </section>
             </section>
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
@@ -429,7 +456,8 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="inputPassword" class="col-form-label">Heslo:</label>
-                                    <input type="password" class="form-control" id="inputPassword"></textarea>
+                                    <input type="password" class="form-control" id="inputPassword">
+                                    </textarea>
                                 </div>
                             </form>
                         </div>
