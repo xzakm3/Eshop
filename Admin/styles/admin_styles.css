@@ -26,7 +26,8 @@
           color: white;
           text-decoration: none; }
   .main-container > main {
-    grid-area: content; }
+    grid-area: content;
+    min-height: 100vh; }
     .main-container > main #dashboard {
       padding: 10px; }
   .main-container > footer {

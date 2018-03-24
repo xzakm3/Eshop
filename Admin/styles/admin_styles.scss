@@ -41,6 +41,7 @@
 
     &  > main {
         grid-area: content;
+        min-height: 100vh;
         #dashboard {
             padding: 10px;
         }
