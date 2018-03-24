@@ -348,13 +348,15 @@
             </div>
         </aside>
         <main>
-            <section id="shopping-cart-content">
+            <section id="last-control">
                 <section id="shopping-steps">
-                    <span id="shopping-cart"><b>Nákupný košík</b></span>
+                    <span id="shopping-cart">Nákupný košík</span>
                     <i class="fas fa-chevron-right"></i>
                     <span id="delivery-and-payment">Doručenie a platba</span>
                     <i class="fas fa-chevron-right"></i>
-                    <span id="last-control">Posledná kontrola</span>
+                    <span id="last-control">
+                        <b>Posledná kontrola</b>
+                    </span>
                     <i class="fas fa-chevron-right"></i>
                     <span id="order-confirmation">Potvrdenie objednávky</span>
                 </section>
@@ -377,18 +379,10 @@
                             <td>YAMAHA C40 KLASICKÁ GITARA</td>
                             <td>250.00 €</td>
                             <td>
-                                <a class="btn quantity-minus">
-                                    <i class="fas fa-minus"></i>
-                                </a>
                                 2
-                                <a class="btn quantity-plus">
-                                    <i class="fas fa-plus"></i>
-                                </a>
                             </td>
                             <td>500.00€</td>
-                            <td>
-                                <i class="fas fa-times"></i>
-                            </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <th scope="row">
@@ -397,44 +391,63 @@
                             <td>CORT X20 KLASICKÁ AKUSTICKÁ GITARA</td>
                             <td>250.00 €</td>
                             <td>
-                                <a class="btn quantity-minus">
-                                    <i class="fas fa-minus"></i>
-                                </a>
                                 1
-                                <a class="btn quantity-plus">
-                                    <i class="fas fa-plus"></i>
-                                </a>
                             </td>
                             <td>250.00€</td>
-                            <td>
-                                <i class="fas fa-times"></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">
-                            </th>
                             <td></td>
-                            <td>
-                                <p>Celkom bez DPH</p>
-                                <p class="price-with-DPH">Celkom s DPH</p>
-                            </td>
-                            <td>
-                            </td>
-                            <td></td>
-                            <td>
-                                <p>600 €</p>
-                                <p class="price-with-DPH">750 €</p>
-                            </td>
                         </tr>
                     </tbody>
                 </table>
+                <section id="summary-info">
+                    <div class="row">
+                        <div class="col-6">
+                            <span>Doprava</span>
+                        </div>
+                        <div class="col-6">
+                            <span>
+                                <b>Osobný odber</b>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <span>Platba</span>
+                        </div>
+                        <div class="col-6">
+                            <span>
+                                <b>Bankový prevod</b>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <span>Celkom bez DPH</span>
+                        </div>
+                        <div class="col-6">
+                            <span>
+                                <b>600 €</b>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <span class="price-with-DPH">Celkom s DPH</span>
+                        </div>
+                        <div class="col-6">
+                            <span class="price-with-DPH">750 €</span>
+                        </div>
+                    </div>
+                </section>
                 <section id="summary-buttons">
                     <div class="row">
                         <div class="col-md-6 col-sm-12 back">
-                            <a href="#" class="btn btn-secondary"><i class="fas fa-chevron-left"></i> Pokračovať v nákupe</a>
+                            <a href="#" class="btn btn-secondary">
+                                <i class="fas fa-chevron-left"></i> Doručenie a platba</a>
                         </div>
                         <div class="col-md-6 col-sm-12 next">
-                            <a href="#" class="btn btn-danger">Prejsť k objednávke <i class="fas fa-chevron-right"></i></a>
+                            <a href="#" class="btn btn-danger">Záväzne objednať
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
                         </div>
                     </div>
                 </section>
