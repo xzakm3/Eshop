@@ -348,93 +348,149 @@
             </div>
         </aside>
         <main>
-            <section id="shopping-cart-content">
+            <section id="delivery-and-payment">
                 <section id="shopping-steps">
-                    <span id="shopping-cart"><b>Nákupný košík</b></span>
+                    <span id="shopping-cart">Nákupný košík</span>
                     <i class="fas fa-chevron-right"></i>
-                    <span id="delivery-and-payment">Doručenie a platba</span>
+                    <span id="delivery-and-payment">
+                        <b>Doručenie a platba</b>
+                    </span>
                     <i class="fas fa-chevron-right"></i>
                     <span id="last-control">Posledná kontrola</span>
                     <i class="fas fa-chevron-right"></i>
                     <span id="order-confirmation">Potvrdenie objednávky</span>
                 </section>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col"></th>
-                            <th scope="col">Položka</th>
-                            <th scope="col">Jednotková cena</th>
-                            <th scope="col">Množstvo</th>
-                            <th scope="col">Cena spolu</th>
-                            <th scope="col"></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">
-                                <img src="images/product-photo-detail.jpeg" width="100" height="auto">
-                            </th>
-                            <td>YAMAHA C40 KLASICKÁ GITARA</td>
-                            <td>250.00 €</td>
-                            <td>
-                                <a class="btn quantity-minus">
-                                    <i class="fas fa-minus"></i>
-                                </a>
-                                2
-                                <a class="btn quantity-plus">
-                                    <i class="fas fa-plus"></i>
-                                </a>
-                            </td>
-                            <td>500.00€</td>
-                            <td>
-                                <i class="fas fa-times"></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">
-                                <img src="images/product-photo.jpeg" width="100" height="auto">
-                            </th>
-                            <td>CORT X20 KLASICKÁ AKUSTICKÁ GITARA</td>
-                            <td>250.00 €</td>
-                            <td>
-                                <a class="btn quantity-minus">
-                                    <i class="fas fa-minus"></i>
-                                </a>
-                                1
-                                <a class="btn quantity-plus">
-                                    <i class="fas fa-plus"></i>
-                                </a>
-                            </td>
-                            <td>250.00€</td>
-                            <td>
-                                <i class="fas fa-times"></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">
-                            </th>
-                            <td></td>
-                            <td>
-                                <p>Celkom bez DPH</p>
-                                <p class="price-with-DPH">Celkom s DPH</p>
-                            </td>
-                            <td>
-                            </td>
-                            <td></td>
-                            <td>
-                                <p>600 €</p>
-                                <p class="price-with-DPH">750 €</p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <section id="form">
+                    <form>
+                        <div class="row d-md-none">
+                            <div class="col-sm-12">
+                                <button type="button" class="btn btn-secondary">Preniesť údaje z konta</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6 col-sm-12">
+                                <label for="inputEmail">Email *</label>
+                                <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+                            </div>
+                            <div class="form-group col-md-6 col-sm-12 d-none d-md-block">
+                                <label for="delivery-method">Spôsob doručenia *</label>
+                                <select class="custom-select select-deliver" id="delivery-method">
+                                    <option selected>Osobný odber</option>
+                                    <option value="1">Slovenská pošta - list (do 300g): + 2.60 €</option>
+                                    <option value="2">Slovenská pošta - balík (do 5kg): + 5.90 €</option>
+                                    <option value="3">Kuriér DHL (1 balík do 20kg): + 2.99 €</option>
+                                    <option value="4">Kuriér UPS (2 a viac balíkov naraz): + 3.99 €</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6 col-sm-12">
+                                <label for="inputPhoneNumber">Telefónne číslo *</label>
+                                <input type="text" class="form-control" id="inputPhoneNumber" placeholder="e.g. +421 902 902 902" required>
+                            </div>
+                            <div class="form-group col-md-6 col-sm-12 d-none d-md-block">
+                                <label for="payment-method">Spôsob platby *</label>
+                                <select class="custom-select select-payment-method" id="payment-method">
+                                    <option selected>Bankový prevod: zľava 0.1%</option>
+                                    <option value="1">Cena zostupne</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6 col-sm-12">
+                                <h2>Fakturačné údaje</h2>
+                            </div>
+                            <div class="form-group col-md-6 d-none d-md-block">
+                                <button type="button" class="btn btn-secondary">Preniesť údaje z konta</button>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6 col-sm-12">
+                                <label for="inputName">Meno *</label>
+                                <input type="text" class="form-control" id="inputName" placeholder="Meno" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6 col-sm-12">
+                                <label for="inputSurname">Priezvisko *</label>
+                                <input type="text" class="form-control" id="inputSurname" placeholder="Priezvisko" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6 col-sm-12">
+                                <label for="inputPhoneNumber">Telefónne číslo *</label>
+                                <input type="text" class="form-control" id="inputPhoneNumber" placeholder="e.g. +421 902 902 902" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6 col-sm-12">
+                                <label for="inputAddress">Ulica a číslo domu *</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="e.g. Jašíková 21" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6 col-sm-12">
+                                <label for="inputCity">Mesto *</label>
+                                <input type="text" class="form-control" id="inputCity" placeholder="e.g. Bratislava" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6 col-sm-12">
+                                <label for="inputPSC">PSČ *</label>
+                                <input type="number" class="form-control" id="inputPSC" placeholder="e.g. 82103" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6 col-sm-12">
+                                <label for="inputICO">IČO</label>
+                                <input type="number" class="form-control" id="inputICO" placeholder="e.g. 12345678">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6 col-sm-12">
+                                <label for="inputDIC">DIČ *</label>
+                                <input type="number" class="form-control" id="inputDIC" placeholder="e.g. 1234512345">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6 col-sm-12">
+                                <label for="inputICDPH">IČ DPH</label>
+                                <input type="text" class="form-control" id="inputICDPH" placeholder="e.g. SK1234512345">
+                            </div>
+                        </div>
+                        <div class="row d-md-none">
+                            <div class="form-group col-sm-12">
+                                <label for="delivery-method">Spôsob doručenia *</label>
+                                <select class="custom-select select-deliver" id="delivery-method">
+                                    <option selected>Osobný odber</option>
+                                    <option value="1">Slovenská pošta - list (do 300g): + 2.60 €</option>
+                                    <option value="2">Slovenská pošta - balík (do 5kg): + 5.90 €</option>
+                                    <option value="3">Kuriér DHL (1 balík do 20kg): + 2.99 €</option>
+                                    <option value="4">Kuriér UPS (2 a viac balíkov naraz): + 3.99 €</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row d-md-none">
+                            <div class="form-group col-sm-12">
+                                <label for="payment-method">Spôsob platby *</label>
+                                <select class="custom-select select-payment-method" id="payment-method">
+                                    <option selected>Bankový prevod: zľava 0.1%</option>
+                                    <option value="1">Cena zostupne</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </section>
                 <section id="summary-buttons">
                     <div class="row">
                         <div class="col-md-6 col-sm-12 back">
-                            <a href="#" class="btn btn-secondary"><i class="fas fa-chevron-left"></i> Pokračovať v nákupe</a>
+                            <a href="#" class="btn btn-secondary">
+                                <i class="fas fa-chevron-left"></i> Nákupný košík</a>
                         </div>
                         <div class="col-md-6 col-sm-12 next">
-                            <a href="#" class="btn btn-danger">Prejsť k objednávke <i class="fas fa-chevron-right"></i></a>
+                            <a href="#" class="btn btn-danger">Posledná kontrola
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
                         </div>
                     </div>
                 </section>
