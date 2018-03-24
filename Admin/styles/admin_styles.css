@@ -31,6 +31,12 @@
       padding: 10px; }
   .main-container > footer {
     grid-area: footer; }
+    .main-container > footer .text {
+      background: rgba(0, 0, 0, 0.05); }
+      .main-container > footer .text p {
+        text-align: center;
+        margin-bottom: 0px;
+        padding: 15px 0px; }
 
 @media (min-width: 850px) {
   .main-container {
