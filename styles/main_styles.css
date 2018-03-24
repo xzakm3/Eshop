@@ -174,19 +174,19 @@
       width: 60px; }
     .main-container > main #product-info form .btn-secondary {
       width: 70%; }
-    .main-container > main #shopping-cart-content > #shopping-steps, .main-container > main #delivery-and-payment > #shopping-steps, .main-container > main #last-control > #shopping-steps {
+    .main-container > main #shopping-cart-content > #shopping-steps, .main-container > main #delivery-and-payment > #shopping-steps, .main-container > main #last-control > #shopping-steps, .main-container > main #order-confirmation > #shopping-steps {
       margin-bottom: 5px;
       border-radius: 5px;
       background: rgba(0, 0, 0, 0.125);
       text-align: center;
       padding: 15px 0px; }
-      .main-container > main #shopping-cart-content > #shopping-steps #shopping-cart, .main-container > main #shopping-cart-content > #shopping-steps #delivery-and-payment, .main-container > main #shopping-cart-content > #shopping-steps #last-control, .main-container > main #shopping-cart-content > #shopping-steps #order-confirmation, .main-container > main #delivery-and-payment > #shopping-steps #shopping-cart, .main-container > main #delivery-and-payment > #shopping-steps #delivery-and-payment, .main-container > main #delivery-and-payment > #shopping-steps #last-control, .main-container > main #delivery-and-payment > #shopping-steps #order-confirmation, .main-container > main #last-control > #shopping-steps #shopping-cart, .main-container > main #last-control > #shopping-steps #delivery-and-payment, .main-container > main #last-control > #shopping-steps #last-control, .main-container > main #last-control > #shopping-steps #order-confirmation {
+      .main-container > main #shopping-cart-content > #shopping-steps .shopping-cart, .main-container > main #shopping-cart-content > #shopping-steps .delivery-and-payment, .main-container > main #shopping-cart-content > #shopping-steps .last-control, .main-container > main #shopping-cart-content > #shopping-steps .order-confirmation, .main-container > main #delivery-and-payment > #shopping-steps .shopping-cart, .main-container > main #delivery-and-payment > #shopping-steps .delivery-and-payment, .main-container > main #delivery-and-payment > #shopping-steps .last-control, .main-container > main #delivery-and-payment > #shopping-steps .order-confirmation, .main-container > main #last-control > #shopping-steps .shopping-cart, .main-container > main #last-control > #shopping-steps .delivery-and-payment, .main-container > main #last-control > #shopping-steps .last-control, .main-container > main #last-control > #shopping-steps .order-confirmation, .main-container > main #order-confirmation > #shopping-steps .shopping-cart, .main-container > main #order-confirmation > #shopping-steps .delivery-and-payment, .main-container > main #order-confirmation > #shopping-steps .last-control, .main-container > main #order-confirmation > #shopping-steps .order-confirmation {
         margin: 0px 15px; }
-    .main-container > main #shopping-cart-content > #summary-buttons .back > a, .main-container > main #shopping-cart-content > #summary-buttons .next > a, .main-container > main #delivery-and-payment > #summary-buttons .back > a, .main-container > main #delivery-and-payment > #summary-buttons .next > a, .main-container > main #last-control > #summary-buttons .back > a, .main-container > main #last-control > #summary-buttons .next > a {
+    .main-container > main #shopping-cart-content > #summary-buttons .back > a, .main-container > main #shopping-cart-content > #summary-buttons .next > a, .main-container > main #delivery-and-payment > #summary-buttons .back > a, .main-container > main #delivery-and-payment > #summary-buttons .next > a, .main-container > main #last-control > #summary-buttons .back > a, .main-container > main #last-control > #summary-buttons .next > a, .main-container > main #order-confirmation > #summary-buttons .back > a, .main-container > main #order-confirmation > #summary-buttons .next > a {
       width: 60%; }
-    .main-container > main #shopping-cart-content > #summary-buttons .back, .main-container > main #delivery-and-payment > #summary-buttons .back, .main-container > main #last-control > #summary-buttons .back {
+    .main-container > main #shopping-cart-content > #summary-buttons .back, .main-container > main #delivery-and-payment > #summary-buttons .back, .main-container > main #last-control > #summary-buttons .back, .main-container > main #order-confirmation > #summary-buttons .back {
       text-align: left; }
-    .main-container > main #shopping-cart-content > #summary-buttons .next, .main-container > main #delivery-and-payment > #summary-buttons .next, .main-container > main #last-control > #summary-buttons .next {
+    .main-container > main #shopping-cart-content > #summary-buttons .next, .main-container > main #delivery-and-payment > #summary-buttons .next, .main-container > main #last-control > #summary-buttons .next, .main-container > main #order-confirmation > #summary-buttons .next {
       text-align: right; }
     .main-container > main #shopping-cart-content #summary-info, .main-container > main #last-control #summary-info {
       border-top: 1px solid #dee2e6;
@@ -213,6 +213,8 @@
     .main-container > main #form button {
       margin-top: 15px;
       margin-bottom: 10px; }
+    .main-container > main #order-confirmation .alert-light {
+      border: 1px solid; }
   .main-container > footer {
     grid-area: footer;
     background-color: white; }
@@ -338,11 +340,11 @@
     #product-info .structural form .form-group {
       margin-left: calc(15%) !important; } }
 @media (max-width: 849px) {
-  #shopping-cart-content #shopping-steps, #delivery-and-payment #shopping-steps, #last-control #shopping-steps {
+  #shopping-cart-content #shopping-steps, #delivery-and-payment #shopping-steps, #last-control #shopping-steps, #order-confirmation #shopping-steps {
     margin-top: 5px; }
-  #shopping-cart-content #summary-buttons .back, #shopping-cart-content #summary-buttons .next, #delivery-and-payment #summary-buttons .back, #delivery-and-payment #summary-buttons .next, #last-control #summary-buttons .back, #last-control #summary-buttons .next {
+  #shopping-cart-content #summary-buttons .back, #shopping-cart-content #summary-buttons .next, #delivery-and-payment #summary-buttons .back, #delivery-and-payment #summary-buttons .next, #last-control #summary-buttons .back, #last-control #summary-buttons .next, #order-confirmation #summary-buttons .back, #order-confirmation #summary-buttons .next {
     margin: 1px 0px; }
-    #shopping-cart-content #summary-buttons .back > a, #shopping-cart-content #summary-buttons .next > a, #delivery-and-payment #summary-buttons .back > a, #delivery-and-payment #summary-buttons .next > a, #last-control #summary-buttons .back > a, #last-control #summary-buttons .next > a {
+    #shopping-cart-content #summary-buttons .back > a, #shopping-cart-content #summary-buttons .next > a, #delivery-and-payment #summary-buttons .back > a, #delivery-and-payment #summary-buttons .next > a, #last-control #summary-buttons .back > a, #last-control #summary-buttons .next > a, #order-confirmation #summary-buttons .back > a, #order-confirmation #summary-buttons .next > a {
       width: 100% !important; }
 
   #shopping-cart-content thead, #last-control thead {

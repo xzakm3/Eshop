@@ -240,14 +240,14 @@
                 }
             }
         }
-        #shopping-cart-content, #delivery-and-payment, #last-control {
+        #shopping-cart-content, #delivery-and-payment, #last-control, #order-confirmation {
             & > #shopping-steps {
                 margin-bottom: 5px;
                 border-radius: 5px;
                 background: rgba(0, 0, 0, 0.125);
                 text-align: center;
                 padding: 15px 0px;
-                #shopping-cart, #delivery-and-payment, #last-control, #order-confirmation {
+                .shopping-cart, .delivery-and-payment, .last-control, .order-confirmation {
                     margin: 0px 15px;
                 }
             }
@@ -308,6 +308,11 @@
             button {
                 margin-top: 15px;
                 margin-bottom: 10px;
+            }
+        }
+        #order-confirmation {
+            .alert-light {
+                border: 1px solid
             }
         }
     }
@@ -493,7 +498,7 @@
     }
 }
 @media(max-width: 849px) {
-    #shopping-cart-content, #delivery-and-payment, #last-control {
+    #shopping-cart-content, #delivery-and-payment, #last-control, #order-confirmation {
         #shopping-steps {
             margin-top: 5px;
         }
