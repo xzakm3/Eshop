@@ -280,6 +280,89 @@
         }
     }
     
+    .chat {
+        position: fixed;
+        bottom: 15px;
+        right: 5px;
+        .window {
+            height: 217px;
+            width: 300px;
+            background-color: white;
+            border: 1px solid rgba(0,0,0,.125);
+            margin-bottom: 18px;
+            display: none;
+            .toolbar {
+                width: auto;
+                height: 20px;
+                background-color: white;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+                text-align: right;
+                .fa-times, .fa-minus {
+                    margin-right: 5px;
+                    margin-bottom: 2px;
+                }
+            }
+            .content {
+                overflow: auto;
+                height: 170px;
+                .admin, .user {
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                    font-size: 13px;
+                    width: 190px;
+                    display: block;
+                    .title {
+                        font-size: 10px;
+                        span {
+                            color: rgba(0, 0, 0, 0.75);
+                        }
+                    }
+                    .text {
+                        border-radius: 5px;
+                    }
+                }
+                .admin {
+                    .text, .title {
+                        margin-left: 10px;
+                    }
+                    .text {
+                        padding: 3px 0px 3px 8px;
+                        background: rgba(0, 0, 0, 0.05);
+                    }
+                }
+                .user {
+                    float: right !important;
+                    margin-right: 10px;
+                    .title {
+                        text-align: right;
+                        margin-right: 10px;
+                    }
+                    .text {  
+                        padding: 5px;
+                        background: rgba(0, 0, 0, 0.15);
+                    }
+                }
+            }
+            form {
+                max-height: 30px;
+                input {
+                    width: 100%;
+                    padding: 0px;
+                    border-radius: 0px;
+                }
+            }
+        }
+        .help-title {
+            background-color: #cc0000;
+            padding: 15px 25px;
+            color: white;
+            font-weight: 500;
+            line-height: 1.2;
+            font-size: 2rem;
+            border-right: 2px solid #cc0000;
+        }
+    }
+    
 }
 
 @media(min-width: 850px) {
@@ -339,4 +422,7 @@
             }
         }
     }
+}
+.shown {
+    display: block !important;
 }

@@ -5,3 +5,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
 });
 
+function toggleChatWindow(element) {
+    element.previousElementSibling.classList.toggle("shown");
+}
+
