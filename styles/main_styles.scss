@@ -240,7 +240,7 @@
                 }
             }
         }
-        #shopping-cart-content {
+        #shopping-cart-content, #delivery-and-payment {
             & > #shopping-steps {
                 margin-bottom: 5px;
                 border-radius: 5px;
@@ -251,6 +251,19 @@
                     margin: 0px 15px;
                 }
             }
+            & > #summary-buttons {
+                .back > a, .next > a {
+                    width: 60%;
+                }
+                .back {
+                    text-align: left;
+                }
+                .next {
+                    text-align: right;
+                }
+            }
+        }
+        #shopping-cart-content {
             & > table {
                 thead > tr > th {
                     border-top: 0px;
@@ -278,16 +291,11 @@
                     }
                 }
             }
-            & > #summary-buttons {
-                .back > a, .next > a {
-                    width: 60%;
-                }
-                .back {
-                    text-align: left;
-                }
-                .next {
-                    text-align: right;
-                }
+        }
+        #form {
+            button {
+                margin-top: 15px;
+                margin-bottom: 10px;
             }
         }
     }
@@ -473,10 +481,20 @@
     }
 }
 @media(max-width: 849px) {
-    #shopping-cart-content {
+    #shopping-cart-content, #delivery-and-payment {
         #shopping-steps {
             margin-top: 5px;
         }
+        #summary-buttons {
+            .back, .next {
+                margin: 1px 0px;
+                & > a { 
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+    #shopping-cart-content {
         thead {
             display: none;
         }
@@ -487,14 +505,6 @@
             }
             & > td {
                 border: none;
-            }
-        }
-        #summary-buttons {
-            .back, .next {
-                margin: 1px 0px;
-                & > a { 
-                    width: 100% !important;
-                }
             }
         }
     }
