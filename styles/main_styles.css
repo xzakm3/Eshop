@@ -100,7 +100,7 @@
   .main-container > main {
     grid-area: content; }
     .main-container > main > #carouselExampleControls > .carousel-inner {
-      height: 440px; }
+      max-height: 440px; }
     .main-container > main h1 {
       text-align: center;
       padding: 20px 0px;
