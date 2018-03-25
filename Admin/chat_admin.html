@@ -327,137 +327,52 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a href="#">Chat</a>
+                    <a href="#" data-toggle="collapse" data-target="#chats">Chat
+                        <i class="fas fa-angle-down"></i>
+                    </a>
+                    <ul class="collapse" id="chats">
+                        <li class="nav-item">
+                            <a href="#">Jozef Hruška</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Marienka Hrušková</a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </aside>
         <main>
-            <section id="show-product">
-                <h1>Upraviť produkt</h1>
-                <form>
-                    <div class="form-group row">
-                        <label for="inputNameOfProduct" class="col-2 col-form-label col-form-label-lg">Názov:</label>
-                        <div class="col-10">
-                            <input type="text" class="form-control form-control-lg" id="inputNameOfProduct" placeholder="Názov produktu..." value="YAMAHA C40 KLASICKÁ GITARA">
+            <section id="chat-admin">
+                <h1>Jozef Hruška</h1>
+                <div class="window">
+                    <div class="content">
+                        <div class="user">
+                            <div class="title">
+                                <span>Jozef Hruška</span>
+                            </div>
+                            <div class="text">
+                                <span>
+                                    Chcel by som vedieť ako to funguje s Vašimi objednávkami. Či sa dá stornovať v priebehu 24 hodín alebo nemám inú možnosť
+                                    a len počkať kým mi dojde tovar a zakúpiť si ho?
+                                </span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="inputCategoryName" class="col-2 col-form-label col-form-label-lg">Kategória:</label>
-                        <div class="col-10">
-                            <select class="custom-select select-category" id="inputCategoryName">
-                                <option selected>Gitary</option>
-                                <option value="1">Basgitary</option>
-                                <option value="2">Dychové nástroje</option>
-                                <option value="3">Bicie nástroje</option>
-                                <option value="4">Klávesové nástroje</option>
-                                <option value="5">Sláčikové nástroje</option>
-                                <option value="6">Štúdio</option>
-                                <option value="7">Príslušenstvo</option>
-                                <option value="8">Svetlá</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="inputSubcategoryName" class="col-2 col-form-label col-form-label-lg">Podkategória:</label>
-                        <div class="col-10">
-                            <select class="custom-select select-subcategory" id="inputSubcategoryName">
-                                <option selected>Klasické gitary</option>
-                                <option value="1">Akustické gitary</option>
-                                <option value="2">Elektroakustické gitary</option>
-                                <option value="3">Ľavoruké gitary</option>
-                                <option value="4">Guitalele</option>
-                                <option value="5">Ukulele</option>
-                                <option value="6">Banjo</option>
-                                <option value="7">Mandolína</option>
-                                <option value="8">Gitarové príslušenstvo</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="inputAtribute" class="col-2 col-form-label col-form-label-lg">Atribút:</label>
-                        <div class="col-4">
-                            <input type="text" class="form-control form-control-lg" id="inputAtribute" placeholder="Názov, e.g. Farba">
-                        </div>
-                        <div class="col-3">
-                            <input type="text" class="form-control form-control-lg" placeholder="Hodnota, e.g. biela">
-                        </div>
-                        <div class="col-3">
-                            <a href="#" class="btn btn-secondary">Vytvor</a>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-2 col-form-label col-form-label-lg"></label>
-                        <div class="col-5">
-                            <span>Farba</span>
-                        </div>
-                        <div class="col-4">
-                            <span>biela</span>
-                        </div>
-                        <div class="col-1">
-                            <i class="fas fa-times"></i>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-2 col-form-label col-form-label-lg"></label>
-                        <div class="col-5">
-                            <span>Farba</span>
-                        </div>
-                        <div class="col-4">
-                            <span>hnedá</span>
-                        </div>
-                        <div class="col-1">
-                            <i class="fas fa-times"></i>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-2 col-form-label col-form-label-lg"></label>
-                        <div class="col-10">
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="customFile">
-                                <label class="custom-file-label" for="customFile">Zmeniť obrázok...</label>
+                        <div class="admin">
+                            <div class="title">
+                                <span>Vy</span>
+                            </div>
+                            <div class="text">
+                                <span>
+                                    Samozrejme. Objednávky sa dajú stornovať. Až do 48 hodín.
+                                </span>
                             </div>
                         </div>
                     </div>
-                    <div class="form-group row">
-                        <label class="col-2 col-form-label col-form-label-lg"></label>
-                        <div class="col-10">
-                            <img src="../images/product-photo-detail.jpeg" width="350" height="auto">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="inputBrandName" class="col-2 col-form-label col-form-label-lg">Značka:</label>
-                        <div class="col-10">
-                            <input type="text" class="form-control form-control-lg" id="inputBrandName" placeholder="Značka produktu..." value="CORT">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="inputPrice" class="col-2 col-form-label col-form-label-lg">Cena:</label>
-                        <div class="col-10">
-                            <input type="number" class="form-control form-control-lg" id="inputPrice" placeholder="Cena produktu s DPH" value="11.25">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="inputCountOfProducts" class="col-2 col-form-label col-form-label-lg">Sklad:</label>
-                        <div class="col-10">
-                            <input type="number" class="form-control form-control-lg" id="inputCountOfProducts" placeholder="Počet kusov na sklade..."
-                                value="5">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="inputProductInfo" class="col-2 col-form-label col-form-label-lg">Popis:</label>
-                        <div class="col-10">
-                            <textarea class="form-control form-control-lg" id="inputProductInfo" rows="3" placeholder="Popis...">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                            type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                            but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
-                            in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                            with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</textarea>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-danger">Zmazať</button>
-                        <button type="submit" class="btn btn-primary">Uložiť</button>
-                    </div>
+                </div>
+                <form class="form-inline">
+                    <textarea class="form-control" placeholder="Napíšte správu..."></textarea>
+                    <button type="submit" class="btn btn-primary">Odoslať
+                    </button>
                 </form>
             </section>
         </main>
