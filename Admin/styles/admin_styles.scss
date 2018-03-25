@@ -57,6 +57,11 @@
                     }
                 }
             }
+            .add-product-button {
+                .fa-plus {
+                    margin-left: 15px;
+                }
+            }
         }
     }
 
@@ -135,7 +140,7 @@
             #filter {
                 padding: 10px 0px;
                 border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-                h3 {
+                h4 {
                     text-align: center;
                 }
                 .search-input {
@@ -219,7 +224,7 @@
             }
         }
         #admin-product-management > #filter {
-            h3 {
+            h4 {
                 text-align: right;
             }
         }

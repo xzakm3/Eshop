@@ -39,6 +39,8 @@
         .main-container > aside ul li ul > li ul > li > a {
           font-size: 13px;
           padding-left: 70px; }
+      .main-container > aside ul .add-product-button .fa-plus {
+        margin-left: 15px; }
   .main-container > main {
     padding: 10px;
     grid-area: content; }
@@ -86,7 +88,7 @@
     .main-container > main #admin-product-management #filter {
       padding: 10px 0px;
       border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
-      .main-container > main #admin-product-management #filter h3 {
+      .main-container > main #admin-product-management #filter h4 {
         text-align: center; }
       .main-container > main #admin-product-management #filter .search-input {
         width: 100%; }
@@ -132,7 +134,7 @@
         font-size: 1.25rem !important; }
       .main-container #add-product form a, .main-container #show-product form a {
         display: block !important; }
-    .main-container #admin-product-management > #filter h3 {
+    .main-container #admin-product-management > #filter h4 {
       text-align: right; } }
 @media (min-width: 1350px) {
   .main-container {
