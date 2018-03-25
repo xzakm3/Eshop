@@ -44,18 +44,20 @@
     grid-area: content; }
     .main-container > main #dashboard {
       padding: 10px; }
-    .main-container > main #add-product h1 {
+    .main-container > main #add-product h1, .main-container > main #show-product h1 {
       text-align: center;
       margin: 5px 0px 15px 0px; }
-    .main-container > main #add-product form {
+    .main-container > main #add-product form, .main-container > main #show-product form {
       width: 100%; }
-      .main-container > main #add-product form label {
+      .main-container > main #add-product form label, .main-container > main #show-product form label {
         text-align: right;
         font-size: 0.8rem; }
-      .main-container > main #add-product form .custom-file > label {
+      .main-container > main #add-product form .custom-file > label, .main-container > main #show-product form .custom-file > label {
         text-align: unset; }
-      .main-container > main #add-product form > div:last-child {
+      .main-container > main #add-product form > div:last-child, .main-container > main #show-product form > div:last-child {
         text-align: right; }
+    .main-container > main #show-product .fa-times {
+      color: red; }
   .main-container > footer {
     grid-area: footer; }
     .main-container > footer .text {
@@ -71,11 +73,11 @@
     grid-template-areas: "header header header header header header header header header header header header" "aside aside aside content content content content content content content content content" "aside aside aside footer footer footer footer footer footer footer footer footer"; }
     .main-container > main, .main-container > aside {
       min-height: 100vh !important; }
-    .main-container #add-product form {
+    .main-container #add-product form, .main-container #show-product form {
       width: 90% !important; }
-      .main-container #add-product form label {
+      .main-container #add-product form label, .main-container #show-product form label {
         font-size: 1.25rem !important; }
-      .main-container #add-product form a {
+      .main-container #add-product form a, .main-container #show-product form a {
         display: block !important; } }
 @media (min-width: 1350px) {
   .main-container {

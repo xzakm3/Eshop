@@ -66,7 +66,7 @@
         #dashboard {
             padding: 10px;
         }
-        #add-product {
+        #add-product, #show-product {
             h1 {
                 text-align: center;
                 margin: 5px 0px 15px 0px;
@@ -83,6 +83,11 @@
                 & > div:last-child {
                     text-align: right;
                 }
+            }
+        }
+        #show-product {
+            .fa-times {
+                color: red;
             }
         }
     }
@@ -110,7 +115,7 @@
         & > main, & > aside {
             min-height: 100vh !important;
         }
-        #add-product {
+        #add-product, #show-product {
             form {
                 width: 90% !important;
                 label {
