@@ -44,9 +44,6 @@
     grid-area: content; }
     .main-container > main #dashboard {
       padding: 10px; }
-    .main-container > main #add-product h1, .main-container > main #show-product h1 {
-      text-align: center;
-      margin: 5px 0px 15px 0px; }
     .main-container > main #add-product form, .main-container > main #show-product form {
       width: 100%; }
       .main-container > main #add-product form label, .main-container > main #show-product form label {
@@ -58,6 +55,34 @@
         text-align: right; }
     .main-container > main #show-product .fa-times {
       color: red; }
+    .main-container > main #add-product h1, .main-container > main #show-product h1, .main-container > main #chat-admin h1 {
+      text-align: center;
+      margin: 5px 0px 15px 0px; }
+    .main-container > main #chat-admin .window {
+      border: 1px solid rgba(0, 0, 0, 0.625);
+      padding: 20px;
+      overflow: auto;
+      height: 500px; }
+      .main-container > main #chat-admin .window .admin, .main-container > main #chat-admin .window .user {
+        margin: 10px 0px; }
+        .main-container > main #chat-admin .window .admin .title, .main-container > main #chat-admin .window .user .title {
+          font-size: 10px; }
+        .main-container > main #chat-admin .window .admin .text, .main-container > main #chat-admin .window .user .text {
+          border-radius: 5px;
+          padding: 5px; }
+      .main-container > main #chat-admin .window .user .text {
+        background: rgba(0, 0, 0, 0.05); }
+      .main-container > main #chat-admin .window .admin {
+        display: block;
+        float: right; }
+        .main-container > main #chat-admin .window .admin .text {
+          background: rgba(0, 0, 0, 0.25); }
+    .main-container > main #chat-admin form {
+      margin-top: 10px; }
+      .main-container > main #chat-admin form textarea, .main-container > main #chat-admin form button {
+        width: 100%; }
+      .main-container > main #chat-admin form button {
+        margin-top: 3px; }
   .main-container > footer {
     grid-area: footer; }
     .main-container > footer .text {

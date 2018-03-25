@@ -67,10 +67,6 @@
             padding: 10px;
         }
         #add-product, #show-product {
-            h1 {
-                text-align: center;
-                margin: 5px 0px 15px 0px;
-            }
             form {
                 width: 100%;
                 label {
@@ -88,6 +84,51 @@
         #show-product {
             .fa-times {
                 color: red;
+            }
+        }
+        #add-product, #show-product, #chat-admin {
+            h1 {
+                text-align: center;
+                margin: 5px 0px 15px 0px;
+            }
+        }
+        #chat-admin {
+            .window {
+                border: 1px solid rgba(0,0,0,.625);
+                padding: 20px;
+                overflow: auto;
+                height: 500px;
+                .admin, .user {
+                    margin: 10px 0px;
+                    .title {
+                        font-size: 10px;
+                    }
+                    .text {
+                        border-radius: 5px;
+                        padding: 5px;
+                    }
+                }
+                .user {
+                    .text {
+                        background: rgba(0, 0, 0, 0.05);
+                    }
+                }
+                .admin {
+                    display: block;
+                    float: right;
+                    .text {
+                        background: rgba(0, 0, 0, 0.25);
+                    }
+                }
+            }
+            form {
+                margin-top: 10px;
+                textarea, button {
+                    width: 100%;
+                }
+                button {
+                    margin-top: 3px;
+                }
             }
         }
     }
