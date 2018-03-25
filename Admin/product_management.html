@@ -40,7 +40,7 @@
         </header>
         <aside>
             <ul>
-                <li class="nav-item">
+                <li class="nav-item" style="background: #2c3334;">
                     <a href="#">Domov</a>
                 </li>
                 <li class="nav-item">
@@ -337,102 +337,138 @@
             </ul>
         </aside>
         <main>
-            <section id="add-product">
-                <h1>Nový produkt</h1>
-                <form>
-                    <div class="form-group row">
-                        <label for="inputCodeOfProduct" class="col-2 col-form-label col-form-label-lg">Kód:</label>
-                        <div class="col-10">
-                            <input type="text" class="form-control form-control-lg" id="inputCodeOfProduct" placeholder="Kód produktu...">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="inputNameOfProduct" class="col-2 col-form-label col-form-label-lg">Názov:</label>
-                        <div class="col-10">
-                            <input type="text" class="form-control form-control-lg" id="inputNameOfProduct" placeholder="Názov produktu...">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="inputCategoryName" class="col-2 col-form-label col-form-label-lg">Kategória:</label>
-                        <div class="col-10">
-                            <select class="custom-select select-category" id="inputCategoryName">
+            <section id="admin-product-management">
+                <section id="filter">
+                    <form class="form-inline row">
+                        <div class="col-lg-2 col-md-12 col-sm-12">
+                            <select class="custom-select">
                                 <option selected>Gitary</option>
                                 <option value="1">Basgitary</option>
-                                <option value="2">Dychové nástroje</option>
+                                <option value="2">Klávesové nástroje</option>
                                 <option value="3">Bicie nástroje</option>
-                                <option value="4">Klávesové nástroje</option>
+                                <option value="4">Dychové nástroje</option>
                                 <option value="5">Sláčikové nástroje</option>
                                 <option value="6">Štúdio</option>
                                 <option value="7">Príslušenstvo</option>
                                 <option value="8">Svetlá</option>
                             </select>
                         </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="inputSubcategoryName" class="col-2 col-form-label col-form-label-lg">Podkategória:</label>
-                        <div class="col-10">
-                            <select class="custom-select select-subcategory" id="inputSubcategoryName">
-                                <option selected>Klasické gitary</option>
-                                <option value="1">Akustické gitary</option>
-                                <option value="2">Elektroakustické gitary</option>
-                                <option value="3">Ľavoruké gitary</option>
-                                <option value="4">Guitalele</option>
-                                <option value="5">Ukulele</option>
-                                <option value="6">Banjo</option>
-                                <option value="7">Mandolína</option>
-                                <option value="8">Gitarové príslušenstvo</option>
+                        <div class="col-lg-2 col-md-12 col-sm-12">
+                            <h4>Hľadať podľa:</h4>
+                        </div>
+                        <div class="col-lg-2 col-md-12 col-sm-12">
+                            <select class="custom-select">
+                                <option selected>Názov produktu</option>
+                                <option value="1">Kód</option>
+                                <option value="2">Značka</option>
                             </select>
                         </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="inputAtribute" class="col-2 col-form-label col-form-label-lg">Atribút:</label>
-                        <div class="col-4">
-                            <input type="text" class="form-control form-control-lg" id="inputAtribute" placeholder="Názov atribútu...">
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <input class="form-control mr-sm-2 search-input" type="search" placeholder="Search" aria-label="Search">
                         </div>
-                        <div class="col-3">
-                            <input type="text" class="form-control form-control-lg" placeholder="Hodnota...">
+                        <div class="col-lg-2 col-md-12 col-sm-12">
+                            <button class="btn btn-outline-success my-2 my-sm-0 search-action" type="submit">Hľadaj</button>
                         </div>
-                        <div class="col-3">
-                            <a href="#" class="btn btn-secondary">Vytvor</a>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-2 col-form-label col-form-label-lg"></label>
-                        <div class="col-10">
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="customFile">
-                                <label class="custom-file-label" for="customFile">Vybrať súbor...</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="inputBrandName" class="col-2 col-form-label col-form-label-lg">Značka:</label>
-                        <div class="col-10">
-                            <input type="text" class="form-control form-control-lg" id="inputBrandName" placeholder="Značka produktu...">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="inputPrice" class="col-2 col-form-label col-form-label-lg">Cena:</label>
-                        <div class="col-10">
-                            <input type="number" class="form-control form-control-lg" id="inputPrice" placeholder="Cena produktu...">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="inputCountOfProducts" class="col-2 col-form-label col-form-label-lg">Sklad:</label>
-                        <div class="col-10">
-                            <input type="number" class="form-control form-control-lg" id="inputCountOfProducts" placeholder="Počet kusov na sklade...">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="inputProductInfo" class="col-2 col-form-label col-form-label-lg">Popis:</label>
-                        <div class="col-10">
-                            <textarea class="form-control form-control-lg" id="inputProductInfo" rows="3" placeholder="Popis..."></textarea>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-primary">Uložiť produkt</button>
-                    </div>
-                </form>
+                    </form>
+                </section>
+                <section id="content">
+                    <nav class="pagination-top">
+                        <ul class="pagination">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">1</a>
+                            </li>
+                            <li class="page-item active">
+                                <a class="page-link" href="#">2
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">3</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <section id="products">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Názov</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">YAMAHA C40 KLASICKÁ GITARA</th>
+                                    <td>
+                                        <img src="../images/product-photo-detail.jpeg" width="100" height="auto">
+                                        <i class="fas fa-times"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">YAMAHA C40 KLASICKÁ GITARA</th>
+                                    <td>
+                                        <img src="../images/product-photo-detail.jpeg" width="100" height="auto">
+                                        <i class="fas fa-times"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">YAMAHA C40 KLASICKÁ GITARA</th>
+                                    <td colspan="2">
+                                        <img src="../images/product-photo.jpeg" width="100" height="auto">
+                                        <i class="fas fa-times"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">YAMAHA C40 KLASICKÁ GITARA</th>
+                                    <td>
+                                        <img src="../images/product-photo-detail.jpeg" width="100" height="auto">
+                                        <i class="fas fa-times"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">YAMAHA C40 KLASICKÁ GITARA</th>
+                                    <td>
+                                        <img src="../images/product-photo-detail.jpeg" width="100" height="auto">
+                                        <i class="fas fa-times"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">YAMAHA C40 KLASICKÁ GITARA</th>
+                                    <td colspan="2">
+                                        <img src="../images/product-photo.jpeg" width="100" height="auto">
+                                        <i class="fas fa-times"></i>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <nav class="pagination-bottom">
+                        <ul class="pagination">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">1</a>
+                            </li>
+                            <li class="page-item active">
+                                <a class="page-link" href="#">2
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">3</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
             </section>
         </main>
         <footer>
