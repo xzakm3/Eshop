@@ -34,10 +34,10 @@
         .main-container > aside ul li .fa-angle-down {
           margin-left: 15px; }
         .main-container > aside ul li ul > li > a {
-          font-size: 17px;
+          font-size: 15px;
           padding-left: 50px; }
         .main-container > aside ul li ul > li ul > li > a {
-          font-size: 15px;
+          font-size: 13px;
           padding-left: 70px; }
   .main-container > main {
     padding: 10px;
@@ -83,6 +83,22 @@
         width: 100%; }
       .main-container > main #chat-admin form button {
         margin-top: 3px; }
+    .main-container > main #admin-product-management #filter {
+      padding: 10px 0px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
+      .main-container > main #admin-product-management #filter h3 {
+        text-align: center; }
+      .main-container > main #admin-product-management #filter .search-input {
+        width: 100%; }
+      .main-container > main #admin-product-management #filter .search-action {
+        text-align: center;
+        width: 100%; }
+    .main-container > main #admin-product-management #content .pagination-top {
+      float: right;
+      margin-top: 15px; }
+    .main-container > main #admin-product-management #content .pagination-bottom {
+      clear: right;
+      float: right; }
   .main-container > footer {
     grid-area: footer; }
     .main-container > footer .text {
@@ -103,10 +119,15 @@
       .main-container #add-product form label, .main-container #show-product form label {
         font-size: 1.25rem !important; }
       .main-container #add-product form a, .main-container #show-product form a {
-        display: block !important; } }
+        display: block !important; }
+    .main-container #admin-product-management > #filter h3 {
+      text-align: right; } }
 @media (min-width: 1350px) {
   .main-container {
     grid-template-columns: repeat(12, 1fr);
     grid-template-areas: "header header header header header header header header header header header header" "aside aside content content content content content content content content content content" "aside aside footer footer footer footer footer footer footer footer footer footer"; } }
+@media (min-width: 991px) {
+  #admin-product-management > #filter form .search-action {
+    width: 100%; } }
 
 /*# sourceMappingURL=admin_styles.css.map */

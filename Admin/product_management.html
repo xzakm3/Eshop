@@ -332,10 +332,74 @@
             </ul>
         </aside>
         <main>
-            <section id="dashboard">
-                <p>
-                    Ahoj Admin!</p>
-                <i class="fal fa-angle-down"></i>
+            <section id="admin-product-management">
+                <section id="filter">
+                    <form class="form-inline row">
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <h3>Hľadať podľa:</h3>
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-sm-6">
+                            <select class="custom-select">
+                                <option selected>Názov produktu</option>
+                                <option value="1">Kód</option>
+                                <option value="2">Značka</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <input class="form-control mr-sm-2 search-input" type="search" placeholder="Search" aria-label="Search">
+                        </div>
+                        <div class="col-lg-2 col-md-12 col-sm-12">
+                            <button class="btn btn-outline-success my-2 my-sm-0 search-action" type="submit">Hľadaj</button>
+                        </div>
+                    </form>
+                </section>
+                <section id="content">
+                    <nav class="pagination-top">
+                        <ul class="pagination">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">1</a>
+                            </li>
+                            <li class="page-item active">
+                                <a class="page-link" href="#">2
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">3</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <section id="products">
+
+                    </section>
+                    <nav class="pagination-bottom">
+                        <ul class="pagination">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">1</a>
+                            </li>
+                            <li class="page-item active">
+                                <a class="page-link" href="#">2
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">3</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
             </section>
         </main>
         <footer>
