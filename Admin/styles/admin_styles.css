@@ -96,6 +96,18 @@
     .main-container > main #admin-product-management #content .pagination-top {
       float: right;
       margin-top: 15px; }
+    .main-container > main #admin-product-management #content #products table thead {
+      background: #384042;
+      color: white; }
+    .main-container > main #admin-product-management #content #products table tbody th {
+      vertical-align: middle; }
+    .main-container > main #admin-product-management #content #products table tbody .fa-times {
+      float: right;
+      color: red; }
+    .main-container > main #admin-product-management #content #products table tbody tr, .main-container > main #admin-product-management #content #products table thead tr {
+      border-bottom: 1px solid #dee2e6; }
+    .main-container > main #admin-product-management #content #products table tbody th, .main-container > main #admin-product-management #content #products table tbody td, .main-container > main #admin-product-management #content #products table thead th, .main-container > main #admin-product-management #content #products table thead td {
+      border-top: 0px; }
     .main-container > main #admin-product-management #content .pagination-bottom {
       clear: right;
       float: right; }

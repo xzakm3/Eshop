@@ -151,6 +151,31 @@
                     float: right;
                     margin-top: 15px;
                 }
+                #products {
+                    table {
+                        thead {
+                            background: #384042;
+                            color: white;
+                        }
+                        tbody {
+                            th {
+                                vertical-align: middle;
+                            }
+                            .fa-times {
+                                float: right;
+                                color: red;
+                            }
+                        }
+                        tbody, thead { 
+                            tr {
+                                border-bottom: 1px solid #dee2e6;
+                            }
+                            th, td {
+                                border-top: 0px;
+                            }
+                        }
+                    }
+                }
                 .pagination-bottom {
                     clear: right;
                     float: right;
