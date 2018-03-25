@@ -61,9 +61,29 @@
     }
 
     &  > main {
+        padding: 10px;
         grid-area: content;
         #dashboard {
             padding: 10px;
+        }
+        #add-product {
+            h1 {
+                text-align: center;
+                margin: 5px 0px 15px 0px;
+            }
+            form {
+                width: 100%;
+                label {
+                    text-align: right;
+                    font-size: 0.8rem;
+                }
+                .custom-file > label {
+                    text-align: unset;
+                }
+                & > div:last-child {
+                    text-align: right;
+                }
+            }
         }
     }
 
@@ -89,6 +109,17 @@
         "aside aside aside footer footer footer footer footer footer footer footer footer";
         & > main, & > aside {
             min-height: 100vh !important;
+        }
+        #add-product {
+            form {
+                width: 90% !important;
+                label {
+                    font-size: 1.25rem !important;
+                }
+                a {
+                    display: block !important;
+                }
+            }
         }
     }
 }
