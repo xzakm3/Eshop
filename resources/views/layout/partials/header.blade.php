@@ -13,7 +13,7 @@
 
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<a class="navbar-brand" href="#">
-				<img src="images/logo/logo.png" width="130px" height="auto" alt="Logo">
+				<img src="images/logo.png" width="130px" height="auto" alt="Logo">
 			</a>
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item active">
@@ -46,6 +46,34 @@
 					<i class="fas fa-search"></i>
 				</button>
 			</form>
+		</div>
+	</div>
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Prihlásenie</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="loginName" class="col-form-label">Email:</label>
+							<input type="text" class="form-control" id="loginName">
+						</div>
+						<div class="form-group">
+							<label for="inputPassword" class="col-form-label">Heslo:</label>
+							<input type="password" class="form-control" id="inputPassword">
+							</textarea>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary">Prihlásiť</button>
+				</div>
+			</div>
 		</div>
 	</div>
 </header>

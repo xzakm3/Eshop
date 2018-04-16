@@ -1,7 +1,7 @@
 <footer>
 	<div class="row">
 		<div class="col-md-4 col-sm-12" align="center">
-			<img src="images/logo/logo.png" width="150px" height="auto" alt="Logo">
+			<img src="images/logo.png" width="150px" height="auto" alt="Logo">
 			<p>
 				<b>E-mail:</b> info@muzikaland.com</p>
 			<p>
