@@ -1,0 +1,360 @@
+* {
+    box-sizing: border-box; }
+
+.main-container {
+    display: grid;
+    grid-template-areas: "header" "aside" "content" "footer"; }
+.main-container .btn-secondary {
+    width: 100%;
+    background-color: white;
+    color: black;
+    border: 1px solid black; }
+.main-container .btn-secondary:hover {
+    color: white;
+    background-color: black; }
+.main-container > header {
+    height: 300px;
+    background: url(../images/header-background.jpeg), no-repeat center center fixed;
+    background-size: cover;
+    grid-area: header; }
+.main-container > header .special-menu-part {
+    max-width: 1080px;
+    padding: 7px 0px;
+    margin: 0 auto;
+    text-align: right;
+    background: rgba(0, 0, 0, 0.5); }
+.main-container > header .special-menu-part .login-register {
+    margin-right: 15px;
+    color: white; }
+.main-container > header .special-menu-part .login-register > a {
+    color: white !important; }
+.main-container > header > nav {
+    border-radius: 5px;
+    max-width: 1080px;
+    margin: 0 auto;
+    background: rgba(248, 249, 250, 0.95) !important; }
+.main-container > header .search-row {
+    margin-top: 100px; }
+.main-container > header .search-row .form {
+    display: flex;
+    justify-content: center; }
+.main-container > header .search-row .form .form-control {
+    border-radius: 0px;
+    width: 80%;
+    height: 50px; }
+.main-container > header .search-row .form .search-button {
+    vertical-align: 0px;
+    height: 50px;
+    background-color: white;
+    border-radius: 0px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px; }
+.main-container > aside {
+    grid-area: aside;
+    background-color: white; }
+.main-container > aside > .aside-menu-header {
+    background-color: #cc0000;
+    padding: 18px 0px; }
+.main-container > aside > .aside-menu-header > h3 {
+    color: white;
+    font-weight: 300;
+    display: inline;
+    margin-left: calc(50% - 60px); }
+.main-container > aside > .aside-menu-header > button {
+    background: rgba(255, 255, 255, 0);
+    color: white;
+    border: none;
+    float: right;
+    margin-right: 25px;
+    margin-top: 3px;
+    display: block; }
+.main-container > aside > div > ul {
+    list-style: none;
+    padding: 10px 10px 20px 27px;
+    border: 1px solid #ddd; }
+.main-container > aside > div > ul > li {
+    line-height: 2.2;
+    display: block; }
+.main-container > aside > div > ul > li > a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 20px;
+    font-weight: 300; }
+.main-container > aside > div > ul > li > a:hover {
+    color: rgba(0, 0, 0, 0.95); }
+.main-container > aside > div > ul > li > .submenu {
+    list-style-type: none;
+    padding-left: 5px;
+    display: none;
+    -webkit-transition: display 600ms;
+    transition: display 600ms; }
+.main-container > aside > div > ul > li > .submenu a {
+    font-size: 15px;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.65); }
+.main-container > aside > div > ul > li > .submenu a:hover {
+    text-decoration: none;
+    color: black; }
+.main-container > aside > div > ul > li:hover .submenu {
+    display: block; }
+.main-container > main {
+    grid-area: content; }
+.main-container > main > #carouselExampleControls > .carousel-inner {
+    max-height: 440px; }
+.main-container > main h1 {
+    text-align: center;
+    padding: 20px 0px;
+    background: black;
+    color: white; }
+.main-container > main #products h1, .main-container > main #filtered-products h1, .main-container > main #searched-products h1, .main-container > main #product-info h1 {
+    margin: 10px 0px; }
+.main-container > main #products h2, .main-container > main #filtered-products h2, .main-container > main #searched-products h2, .main-container > main #product-info h2 {
+    margin: 15px 0px; }
+.main-container > main #products .product, .main-container > main #filtered-products .product, .main-container > main #searched-products .product, .main-container > main #product-info .product {
+    margin: 0 auto; }
+.main-container > main #products .product .card-title, .main-container > main #filtered-products .product .card-title, .main-container > main #searched-products .product .card-title, .main-container > main #product-info .product .card-title {
+    text-align: center;
+    font-size: 17px; }
+.main-container > main #products .product .card-subtitle, .main-container > main #filtered-products .product .card-subtitle, .main-container > main #searched-products .product .card-subtitle, .main-container > main #product-info .product .card-subtitle {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100; }
+.main-container > main #products .product .card-price, .main-container > main #filtered-products .product .card-price, .main-container > main #searched-products .product .card-price, .main-container > main #product-info .product .card-price {
+    margin: 20px;
+    text-align: center;
+    font-size: 20px; }
+.main-container > main #products .product .card-buttons, .main-container > main #filtered-products .product .card-buttons, .main-container > main #searched-products .product .card-buttons, .main-container > main #product-info .product .card-buttons {
+    padding: 0px;
+    text-align: center; }
+.main-container > main #products .product .card-buttons a, .main-container > main #filtered-products .product .card-buttons a, .main-container > main #searched-products .product .card-buttons a, .main-container > main #product-info .product .card-buttons a {
+    width: 95%; }
+.main-container > main #products .product .btn-light, .main-container > main #filtered-products .product .btn-light, .main-container > main #searched-products .product .btn-light, .main-container > main #product-info .product .btn-light {
+    border: 1px solid; }
+.main-container > main #products .product .btn-dark, .main-container > main #filtered-products .product .btn-dark, .main-container > main #searched-products .product .btn-dark, .main-container > main #product-info .product .btn-dark {
+    background-color: #cc0000;
+    border-color: #cc0000; }
+.main-container > main #filtered-products .product, .main-container > main #searched-products .product {
+    margin: 0 auto;
+    margin-bottom: 15px; }
+.main-container > main #filtered-products .pagination, .main-container > main #searched-products .pagination {
+    list-style: none;
+    margin-bottom: 0px;
+    float: right; }
+.main-container > main #filtered-products .pagination .page-item.active .page-link, .main-container > main #searched-products .pagination .page-item.active .page-link {
+    background-color: black;
+    border-color: black;
+    color: white; }
+.main-container > main #filtered-products .pagination .page-link, .main-container > main #searched-products .pagination .page-link {
+    color: black; }
+.main-container > main #filter-panel {
+    padding: 15px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-bottom: 10px; }
+.main-container > main #filter-panel .btn-light {
+    border: 1px solid; }
+.main-container > main #filter-panel .pagination {
+    list-style: none;
+    margin-bottom: 0px;
+    float: right; }
+.main-container > main #filter-panel .pagination .page-item.active .page-link {
+    background-color: black;
+    border-color: black;
+    color: white; }
+.main-container > main #filter-panel .pagination .page-link {
+    color: black; }
+.main-container > main #registration h2 {
+    margin: 20px 0px; }
+.main-container > main #product-info h2 {
+    text-align: center; }
+.main-container > main #product-info form .form-group {
+    margin-left: 0px !important;
+    margin-right: 5px !important; }
+.main-container > main #product-info form #inputCount {
+    width: 60px; }
+.main-container > main #product-info form .btn-secondary {
+    width: 70%; }
+.main-container > main #shopping-cart-content > #shopping-steps, .main-container > main #delivery-and-payment > #shopping-steps, .main-container > main #last-control > #shopping-steps, .main-container > main #order-confirmation > #shopping-steps {
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.125);
+    text-align: center;
+    padding: 15px 0px; }
+.main-container > main #shopping-cart-content > #shopping-steps .shopping-cart, .main-container > main #shopping-cart-content > #shopping-steps .delivery-and-payment, .main-container > main #shopping-cart-content > #shopping-steps .last-control, .main-container > main #shopping-cart-content > #shopping-steps .order-confirmation, .main-container > main #delivery-and-payment > #shopping-steps .shopping-cart, .main-container > main #delivery-and-payment > #shopping-steps .delivery-and-payment, .main-container > main #delivery-and-payment > #shopping-steps .last-control, .main-container > main #delivery-and-payment > #shopping-steps .order-confirmation, .main-container > main #last-control > #shopping-steps .shopping-cart, .main-container > main #last-control > #shopping-steps .delivery-and-payment, .main-container > main #last-control > #shopping-steps .last-control, .main-container > main #last-control > #shopping-steps .order-confirmation, .main-container > main #order-confirmation > #shopping-steps .shopping-cart, .main-container > main #order-confirmation > #shopping-steps .delivery-and-payment, .main-container > main #order-confirmation > #shopping-steps .last-control, .main-container > main #order-confirmation > #shopping-steps .order-confirmation {
+    margin: 0px 15px; }
+.main-container > main #shopping-cart-content > #summary-buttons .back > a, .main-container > main #shopping-cart-content > #summary-buttons .next > a, .main-container > main #delivery-and-payment > #summary-buttons .back > a, .main-container > main #delivery-and-payment > #summary-buttons .next > a, .main-container > main #last-control > #summary-buttons .back > a, .main-container > main #last-control > #summary-buttons .next > a, .main-container > main #order-confirmation > #summary-buttons .back > a, .main-container > main #order-confirmation > #summary-buttons .next > a {
+    width: 60%; }
+.main-container > main #shopping-cart-content > #summary-buttons .back, .main-container > main #delivery-and-payment > #summary-buttons .back, .main-container > main #last-control > #summary-buttons .back, .main-container > main #order-confirmation > #summary-buttons .back {
+    text-align: left; }
+.main-container > main #shopping-cart-content > #summary-buttons .next, .main-container > main #delivery-and-payment > #summary-buttons .next, .main-container > main #last-control > #summary-buttons .next, .main-container > main #order-confirmation > #summary-buttons .next {
+    text-align: right; }
+.main-container > main #shopping-cart-content #summary-info, .main-container > main #last-control #summary-info {
+    border-top: 1px solid #dee2e6;
+    padding-top: 5px;
+    margin-bottom: 10px; }
+.main-container > main #shopping-cart-content #summary-info .price-with-DPH, .main-container > main #last-control #summary-info .price-with-DPH {
+    font-size: 25px;
+    font-weight: 600; }
+.main-container > main #shopping-cart-content #summary-info .row > div:first-child, .main-container > main #last-control #summary-info .row > div:first-child {
+    text-align: right; }
+.main-container > main #shopping-cart-content #summary-info .row > div:not(:first-child), .main-container > main #last-control #summary-info .row > div:not(:first-child) {
+    text-align: left; }
+.main-container > main #shopping-cart-content > table thead > tr > th, .main-container > main #last-control > table thead > tr > th {
+    border-top: 0px; }
+.main-container > main #shopping-cart-content > table tbody td, .main-container > main #last-control > table tbody td {
+    vertical-align: middle; }
+.main-container > main #shopping-cart-content > table tbody td .fa-times, .main-container > main #last-control > table tbody td .fa-times {
+    color: #cc0000 !important; }
+.main-container > main #shopping-cart-content > table tbody td .quantity-plus, .main-container > main #shopping-cart-content > table tbody td .quantity-minus, .main-container > main #last-control > table tbody td .quantity-plus, .main-container > main #last-control > table tbody td .quantity-minus {
+    background-color: black;
+    padding: 1px 6px; }
+.main-container > main #shopping-cart-content > table tbody td .quantity-plus .fa-plus, .main-container > main #shopping-cart-content > table tbody td .quantity-plus .fa-minus, .main-container > main #shopping-cart-content > table tbody td .quantity-minus .fa-plus, .main-container > main #shopping-cart-content > table tbody td .quantity-minus .fa-minus, .main-container > main #last-control > table tbody td .quantity-plus .fa-plus, .main-container > main #last-control > table tbody td .quantity-plus .fa-minus, .main-container > main #last-control > table tbody td .quantity-minus .fa-plus, .main-container > main #last-control > table tbody td .quantity-minus .fa-minus {
+    color: white; }
+.main-container > main #form button {
+    margin-top: 15px;
+    margin-bottom: 10px; }
+.main-container > main #order-confirmation .alert-light {
+    border: 1px solid; }
+.main-container > footer {
+    grid-area: footer;
+    background-color: white; }
+.main-container > footer > .row:first-child {
+    margin-top: 35px;
+    margin-bottom: 25px; }
+.main-container > footer > .row:last-child {
+    background: rgba(0, 0, 0, 0.05); }
+.main-container > footer > .row:last-child > p {
+    padding: 13px;
+    margin: 0 auto; }
+.main-container > footer .line {
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    width: 50px;
+    margin-top: 15px;
+    margin-bottom: 17px; }
+.main-container > footer ul {
+    list-style: none;
+    padding-left: 5px; }
+.main-container > footer ul > li {
+    line-height: 1.9; }
+.main-container > footer ul > li > a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6); }
+.main-container > footer ul > li > a:hover {
+    color: rgba(0, 0, 0, 0.9); }
+.main-container .chat {
+    position: fixed;
+    bottom: 15px;
+    right: 5px; }
+.main-container .chat .window {
+    height: 217px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    margin-bottom: 18px;
+    display: none; }
+.main-container .chat .window .toolbar {
+    width: auto;
+    height: 20px;
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    text-align: right; }
+.main-container .chat .window .toolbar .fa-times, .main-container .chat .window .toolbar .fa-minus {
+    margin-right: 5px;
+    margin-bottom: 2px; }
+.main-container .chat .window .content {
+    overflow: auto;
+    height: 170px; }
+.main-container .chat .window .content .admin, .main-container .chat .window .content .user {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 13px;
+    width: 190px;
+    display: block; }
+.main-container .chat .window .content .admin .title, .main-container .chat .window .content .user .title {
+    font-size: 10px; }
+.main-container .chat .window .content .admin .title span, .main-container .chat .window .content .user .title span {
+    color: rgba(0, 0, 0, 0.75); }
+.main-container .chat .window .content .admin .text, .main-container .chat .window .content .user .text {
+    border-radius: 5px; }
+.main-container .chat .window .content .admin .text, .main-container .chat .window .content .admin .title {
+    margin-left: 10px; }
+.main-container .chat .window .content .admin .text {
+    padding: 3px 0px 3px 8px;
+    background: rgba(0, 0, 0, 0.05); }
+.main-container .chat .window .content .user {
+    float: right !important;
+    margin-right: 10px; }
+.main-container .chat .window .content .user .title {
+    text-align: right;
+    margin-right: 10px; }
+.main-container .chat .window .content .user .text {
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.15); }
+.main-container .chat .window form {
+    max-height: 30px; }
+.main-container .chat .window form input {
+    width: 100%;
+    padding: 0px;
+    border-radius: 0px; }
+.main-container .chat .help-title {
+    background-color: #cc0000;
+    padding: 15px 25px;
+    color: white;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 2rem;
+    border-right: 2px solid #cc0000; }
+
+@media (min-width: 850px) {
+    .main-container {
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 10px;
+        grid-template-areas: "header header header header header header header header header header header header" "aside aside aside content content content content content content content content content" "footer footer footer footer footer footer footer footer footer footer footer footer"; }
+
+    .aside-menu-header > button {
+        display: none !important; } }
+@media (min-width: 1200px) {
+    .main-container {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas: "header header header header header header header header header header header header" ". aside aside content content content content content content content content ." "footer footer footer footer footer footer footer footer footer footer footer footer"; } }
+@media (max-width: 849px) {
+    #filter-panel {
+        margin-top: 10px; }
+
+    #registration h1 {
+        margin-top: 5px; } }
+@media (max-width: 767px) {
+    h4 {
+        margin-top: 30px !important; }
+
+    .line {
+        margin-bottom: 20px !important; }
+
+    #filter-panel > div > div:not(:last-child) {
+        margin-bottom: 10px; }
+
+    #product-info .structural {
+        text-align: center; }
+    #product-info .structural form .form-group {
+        margin-left: calc(15%) !important; } }
+@media (max-width: 849px) {
+    #shopping-cart-content #shopping-steps, #delivery-and-payment #shopping-steps, #last-control #shopping-steps, #order-confirmation #shopping-steps {
+        margin-top: 5px; }
+    #shopping-cart-content #summary-buttons .back, #shopping-cart-content #summary-buttons .next, #delivery-and-payment #summary-buttons .back, #delivery-and-payment #summary-buttons .next, #last-control #summary-buttons .back, #last-control #summary-buttons .next, #order-confirmation #summary-buttons .back, #order-confirmation #summary-buttons .next {
+        margin: 1px 0px; }
+    #shopping-cart-content #summary-buttons .back > a, #shopping-cart-content #summary-buttons .next > a, #delivery-and-payment #summary-buttons .back > a, #delivery-and-payment #summary-buttons .next > a, #last-control #summary-buttons .back > a, #last-control #summary-buttons .next > a, #order-confirmation #summary-buttons .back > a, #order-confirmation #summary-buttons .next > a {
+        width: 100% !important; }
+
+    #shopping-cart-content thead, #last-control thead {
+        display: none; }
+    #shopping-cart-content tbody > tr > th, #shopping-cart-content tbody > tr > td, #last-control tbody > tr > th, #last-control tbody > tr > td {
+        text-align: center;
+        display: block; }
+    #shopping-cart-content tbody > tr > td, #last-control tbody > tr > td {
+        border: none; } }
+.shown {
+    display: block !important; }
+
+/*# sourceMappingURL=main_styles.css.map */
