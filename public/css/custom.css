@@ -357,4 +357,13 @@
 .shown {
     display: block !important; }
 
+.special-menu-part .nav-link {
+    padding-right: 10px;
+    color: white; }
+
+.dropdown-menu{
+    right: 0px; }
+.dropdown-menu[style] {
+    left: unset !important;}
+
 /*# sourceMappingURL=main_styles.css.map */

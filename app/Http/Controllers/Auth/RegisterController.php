@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\Role;
 use App\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
@@ -28,7 +29,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/';
 
     /**
      * Create a new controller instance.
@@ -49,9 +50,14 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:users',
-            'password' => 'required|string|min:6|confirmed',
+			'email' => 'required|string|email|max:255|unique:users',
+			'password' => 'required|string|min:6|confirmed',
+            'firstname' => 'required|string|max:255',
+			'surname' => 'required|string|max:255',
+			'phone_number' => 'required|string|max:13',
+			'address' => 'required|string|max:255',
+			'city' => 'required|string|max:255',
+			'psc' => 'required|string|max:5',
         ]);
     }
 
@@ -63,10 +69,22 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => Hash::make($data['password']),
+    	$role = Role::where('name', 'USER')->first();
+        $user = User::create([
+			'email' => $data['email'],
+			'password' => Hash::make($data['password']),
+        	'firstname' => $data['firstname'],
+			'surname' => $data['surname'],
+			'phone_number' => $data['phone_number'],
+			'address' => $data['address'],
+			'city' => $data['city'],
+			'psc' => $data['psc'],
+			'ico' => $data['ico'],
+			'dic' => $data['dic'],
+			'icdph' => $data['icdph']
         ]);
+
+        $user->roles()->attach($role->id);
+        return $user;
     }
 }

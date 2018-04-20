@@ -11,4 +11,6 @@
 |
 */
 
-Route::get('/', 'UserController@index');
+Route::get('/', 'HomeController@index')->name('landing_page');
+
+Auth::routes();
