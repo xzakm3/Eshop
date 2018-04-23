@@ -15,7 +15,7 @@
 
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="left: unset !important;">
 						@if (Auth::user()->hasRole("ADMIN"))
-							<a class="dropdown-item" href="#">
+							<a class="dropdown-item" href="{{ route('admin') }}">
 								{{ __('Admin Profil') }}
 							</a>
 							<div class="dropdown-divider"></div>

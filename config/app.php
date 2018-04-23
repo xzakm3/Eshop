@@ -160,7 +160,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
+		App\Providers\ComposerServiceProvider::class,
     ],
 
     /*
@@ -212,4 +212,5 @@ return [
 
     ],
 
+	'product_instance-images-path' => 'public/product-images/',
 ];
