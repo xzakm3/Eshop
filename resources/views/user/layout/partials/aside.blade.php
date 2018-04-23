@@ -10,13 +10,13 @@
 	<div class="collapse navbar-collapse" id="asideNavbarSupportedContent">
 		<ul>
 			@foreach ($categories as $category)
-				<li class="nav-item">
-					<a href="#">{{ucfirst($category->name)}}</a>
+				<li class="nav-item" onclick="showSubmenu(this)">
+					<a>{{ucfirst($category->name)}}</a>
 					@if (count($category->subcategories) > 0)
 						<ul class="submenu">
 							@foreach ($category->subcategories as $subcategory)
-								<li class="nav-item">
-									<a href="#">{{ucfirst($subcategory->name)}}</a>
+								<li class="nav-item" onclick="showSubmenu(this)";>
+									<a href="{{ route('customer_filtered_products', ['category' => $category->name, '$subcategory' => $subcategory->name])}}">{{ucfirst($subcategory->name)}}</a>
 								</li>
 							@endforeach
 						</ul>

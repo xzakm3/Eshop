@@ -30,17 +30,17 @@
 				<div class="row">
 					<div class="product col-lg-3 col-md-6 col-sm-6 col-7">
 						<div class="card">
-							<img class="card-img-top" src="images/product-photo.jpeg" alt="Card image cap" width="150" height="auto">
+							<img class="card-img-top" src="{{asset('storage/product-images/'.$products[0]->image()->first()->file)}}" width="150" height="205"/>
 							<div class="card-body">
-								<h5 class="card-title">YAMAHA C40 KLASICKÁ GITARA</h5>
-								<h6 class="card-subtitle">cort</h6>
-								<p class="card-price">11.25€</p>
+								<h5 class="card-title">{{$products[0]->product()->first()->name}}</h5>
+								<h6 class="card-subtitle">{{$products[0]->brand()->first()->name}}</h6>
+								<p class="card-price">{{$products[0]->price}}€</p>
 								<div class="row">
 									<div class="col-md-6 card-buttons">
-										<a href="#" class="btn btn-dark">Kúpiť</a>
+										<a href="{{route('buy_one_product', ['id' => $products[0]->id])}}" class="btn btn-dark">Kúpiť</a>
 									</div>
 									<div class="col-md-6 card-buttons">
-										<a href="#" class="btn btn-light">Detail</a>
+										<a href="{{route('show_product', ['id' => $products[0]->id])}}" class="btn btn-light">Detail</a>
 									</div>
 								</div>
 							</div>
@@ -48,17 +48,17 @@
 					</div>
 					<div class="product col-lg-3 col-md-6 col-sm-6 col-7">
 						<div class="product card">
-							<img class="card-img-top" src="images/product-photo.jpeg" alt="Card image cap" width="150" height="auto">
+							<img class="card-img-top" src="{{asset('storage/product-images/'.$products[1]->image()->first()->file)}}" width="150" height="205"/>
 							<div class="card-body">
-								<h5 class="card-title">YAMAHA C40 KLASICKÁ GITARA</h5>
-								<h6 class="card-subtitle">cort</h6>
-								<p class="card-price">11.25€</p>
+								<h5 class="card-title">{{$products[1]->product()->first()->name}}</h5>
+								<h6 class="card-subtitle">{{$products[1]->brand()->first()->name}}</h6>
+								<p class="card-price">{{$products[1]->price}}€</p>
 								<div class="row">
 									<div class="col-md-6 card-buttons">
-										<a href="#" class="btn btn-dark">Kúpiť</a>
+										<a href="{{route('buy_one_product', ['id' => $products[1]->id])}}" class="btn btn-dark">Kúpiť</a>
 									</div>
 									<div class="col-md-6 card-buttons">
-										<a href="#" class="btn btn-light">Detail</a>
+										<a href="{{route('show_product', ['id' => $products[1]->id])}}"  class="btn btn-light">Detail</a>
 									</div>
 								</div>
 							</div>
@@ -66,17 +66,17 @@
 					</div>
 					<div class="product col-lg-3 col-md-6 col-sm-6 col-7">
 						<div class="product card">
-							<img class="card-img-top" src="images/product-photo.jpeg" alt="Card image cap" width="150" height="auto">
+							<img class="card-img-top" src="{{asset('storage/product-images/'.$products[2]->image()->first()->file)}}" width="150" height="205"/>
 							<div class="card-body">
-								<h5 class="card-title">YAMAHA C40 KLASICKÁ GITARA</h5>
-								<h6 class="card-subtitle">cort</h6>
-								<p class="card-price">11.25€</p>
+								<h5 class="card-title">{{$products[2]->product()->first()->name}}</h5>
+								<h6 class="card-subtitle">{{$products[2]->brand()->first()->name}}</h6>
+								<p class="card-price">{{$products[2]->price}}€</p>
 								<div class="row">
 									<div class="col-md-6 card-buttons">
-										<a href="#" class="btn btn-dark">Kúpiť</a>
+										<a href="{{route('buy_one_product', ['id' => $products[2]->id])}}" class="btn btn-dark">Kúpiť</a>
 									</div>
 									<div class="col-md-6 card-buttons">
-										<a href="#" class="btn btn-light">Detail</a>
+										<a href="{{route('show_product', ['id' => $products[2]->id])}}"  class="btn btn-light">Detail</a>
 									</div>
 								</div>
 							</div>
@@ -84,17 +84,17 @@
 					</div>
 					<div class="product col-lg-3 col-md-6 col-sm-6 col-7">
 						<div class="product card">
-							<img class="card-img-top" src="images/product-photo.jpeg" alt="Card image cap" width="150" height="auto">
+							<img class="card-img-top" src="{{asset('storage/product-images/'.$products[3]->image()->first()->file)}}" width="150" height="205"/>
 							<div class="card-body">
-								<h5 class="card-title">YAMAHA C40 KLASICKÁ GITARA</h5>
-								<h6 class="card-subtitle">cort</h6>
-								<p class="card-price">11.25€</p>
+								<h5 class="card-title">{{$products[3]->product()->first()->name}}</h5>
+								<h6 class="card-subtitle">{{$products[3]->brand()->first()->name}}</h6>
+								<p class="card-price">{{$products[3]->price}}€</p>
 								<div class="row">
 									<div class="col-md-6 card-buttons">
-										<a href="#" class="btn btn-dark">Kúpiť</a>
+										<a href="{{route('buy_one_product', ['id' => $products[3]->id])}}" class="btn btn-dark">Kúpiť</a>
 									</div>
 									<div class="col-md-6 card-buttons">
-										<a href="#" class="btn btn-light">Detail</a>
+										<a href="{{route('show_product', ['id' => $products[3]->id])}}"  class="btn btn-light">Detail</a>
 									</div>
 								</div>
 							</div>
@@ -107,17 +107,17 @@
 				<div class="row">
 					<div class="product col-lg-3 col-md-6 col-sm-6 col-7">
 						<div class="card">
-							<img class="card-img-top" src="images/product-photo.jpeg" alt="Card image cap" width="150" height="auto">
+							<img class="card-img-top" src="{{asset('storage/product-images/'.$products[4]->image()->first()->file)}}" width="150" height="205"/>
 							<div class="card-body">
-								<h5 class="card-title">YAMAHA C40 KLASICKÁ GITARA</h5>
-								<h6 class="card-subtitle">cort</h6>
-								<p class="card-price">11.25€</p>
+								<h5 class="card-title">{{$products[4]->product()->first()->name}}</h5>
+								<h6 class="card-subtitle">{{$products[4]->brand()->first()->name}}</h6>
+								<p class="card-price">{{$products[4]->price}}€</p>
 								<div class="row">
 									<div class="col-md-6 card-buttons">
-										<a href="#" class="btn btn-dark">Kúpiť</a>
+										<a href="{{route('buy_one_product', ['id' => $products[4]->id])}}" class="btn btn-dark">Kúpiť</a>
 									</div>
 									<div class="col-md-6 card-buttons">
-										<a href="#" class="btn btn-light">Detail</a>
+										<a href="{{route('show_product', ['id' => $products[4]->id])}}"  class="btn btn-light">Detail</a>
 									</div>
 								</div>
 							</div>
@@ -125,17 +125,17 @@
 					</div>
 					<div class="product col-lg-3 col-md-6 col-sm-6 col-7">
 						<div class="product card">
-							<img class="card-img-top" src="images/product-photo.jpeg" alt="Card image cap" width="150" height="auto">
+							<img class="card-img-top" src="{{asset('storage/product-images/'.$products[5]->image()->first()->file)}}" width="150" height="205"/>
 							<div class="card-body">
-								<h5 class="card-title">YAMAHA C40 KLASICKÁ GITARA</h5>
-								<h6 class="card-subtitle">cort</h6>
-								<p class="card-price">11.25€</p>
+								<h5 class="card-title">{{$products[5]->product()->first()->name}}</h5>
+								<h6 class="card-subtitle">{{$products[5]->brand()->first()->name}}</h6>
+								<p class="card-price">{{$products[5]->price}}€</p>
 								<div class="row">
 									<div class="col-md-6 card-buttons">
-										<a href="#" class="btn btn-dark">Kúpiť</a>
+										<a href="{{route('buy_one_product', ['id' => $products[5]->id])}}" class="btn btn-dark">Kúpiť</a>
 									</div>
 									<div class="col-md-6 card-buttons">
-										<a href="#" class="btn btn-light">Detail</a>
+										<a href="{{route('show_product', ['id' => $products[5]->id])}}"  class="btn btn-light">Detail</a>
 									</div>
 								</div>
 							</div>
@@ -143,17 +143,17 @@
 					</div>
 					<div class="product col-lg-3 col-md-6 col-sm-6 col-7">
 						<div class="product card">
-							<img class="card-img-top" src="images/product-photo.jpeg" alt="Card image cap" width="150" height="auto">
+							<img class="card-img-top" src="{{asset('storage/product-images/'.$products[6]->image()->first()->file)}}" width="150" height="205"/>
 							<div class="card-body">
-								<h5 class="card-title">YAMAHA C40 KLASICKÁ GITARA</h5>
-								<h6 class="card-subtitle">cort</h6>
-								<p class="card-price">11.25€</p>
+								<h5 class="card-title">{{$products[6]->product()->first()->name}}</h5>
+								<h6 class="card-subtitle">{{$products[6]->brand()->first()->name}}</h6>
+								<p class="card-price">{{$products[6]->price}}€</p>
 								<div class="row">
 									<div class="col-md-6 card-buttons">
-										<a href="#" class="btn btn-dark">Kúpiť</a>
+										<a href="{{route('buy_one_product', ['id' => $products[6]->id])}}" class="btn btn-dark">Kúpiť</a>
 									</div>
 									<div class="col-md-6 card-buttons">
-										<a href="#" class="btn btn-light">Detail</a>
+										<a href="{{route('show_product', ['id' => $products[6]->id])}}"  class="btn btn-light">Detail</a>
 									</div>
 								</div>
 							</div>
@@ -161,17 +161,17 @@
 					</div>
 					<div class="product col-lg-3 col-md-6 col-sm-6 col-7">
 						<div class="product card">
-							<img class="card-img-top" src="images/product-photo.jpeg" alt="Card image cap" width="150" height="auto">
+							<img class="card-img-top" src="{{asset('storage/product-images/'.$products[7]->image()->first()->file)}}" width="150" height="205"/>
 							<div class="card-body">
-								<h5 class="card-title">YAMAHA C40 KLASICKÁ GITARA</h5>
-								<h6 class="card-subtitle">cort</h6>
-								<p class="card-price">11.25€</p>
+								<h5 class="card-title">{{$products[7]->product()->first()->name}}</h5>
+								<h6 class="card-subtitle">{{$products[7]->brand()->first()->name}}</h6>
+								<p class="card-price">{{$products[7]->price}}€</p>
 								<div class="row">
 									<div class="col-md-6 card-buttons">
-										<a href="#" class="btn btn-dark">Kúpiť</a>
+										<a href="{{route('buy_one_product', ['id' => $products[7]->id])}}" class="btn btn-dark">Kúpiť</a>
 									</div>
 									<div class="col-md-6 card-buttons">
-										<a href="#" class="btn btn-light">Detail</a>
+										<a href="{{route('show_product', ['id' => $products[7]->id])}}"  class="btn btn-light">Detail</a>
 									</div>
 								</div>
 							</div>
@@ -184,17 +184,17 @@
 				<div class="row">
 					<div class="product col-lg-3 col-md-6 col-sm-6 col-7">
 						<div class="card">
-							<img class="card-img-top" src="images/product-photo.jpeg" alt="Card image cap" width="150" height="auto">
+							<img class="card-img-top" src="{{asset('storage/product-images/'.$products[8]->image()->first()->file)}}" width="150" height="205"/>
 							<div class="card-body">
-								<h5 class="card-title">YAMAHA C40 KLASICKÁ GITARA</h5>
-								<h6 class="card-subtitle">cort</h6>
-								<p class="card-price">11.25€</p>
+								<h5 class="card-title">{{$products[8]->product()->first()->name}}</h5>
+								<h6 class="card-subtitle">{{$products[8]->brand()->first()->name}}</h6>
+								<p class="card-price">{{$products[8]->price}}€</p>
 								<div class="row">
 									<div class="col-md-6 card-buttons">
-										<a href="#" class="btn btn-dark">Kúpiť</a>
+										<a href="{{route('buy_one_product', ['id' => $products[8]->id])}}" class="btn btn-dark">Kúpiť</a>
 									</div>
 									<div class="col-md-6 card-buttons">
-										<a href="#" class="btn btn-light">Detail</a>
+										<a href="{{route('show_product', ['id' => $products[8]->id])}}" class="btn btn-light">Detail</a>
 									</div>
 								</div>
 							</div>
@@ -202,17 +202,17 @@
 					</div>
 					<div class="product col-lg-3 col-md-6 col-sm-6 col-7">
 						<div class="product card">
-							<img class="card-img-top" src="images/product-photo.jpeg" alt="Card image cap" width="150" height="auto">
+							<img class="card-img-top" src="{{asset('storage/product-images/'.$products[9]->image()->first()->file)}}" width="150" height="205"/>
 							<div class="card-body">
-								<h5 class="card-title">YAMAHA C40 KLASICKÁ GITARA</h5>
-								<h6 class="card-subtitle">cort</h6>
-								<p class="card-price">11.25€</p>
+								<h5 class="card-title">{{$products[9]->product()->first()->name}}</h5>
+								<h6 class="card-subtitle">{{$products[9]->brand()->first()->name}}</h6>
+								<p class="card-price">{{$products[9]->price}}€</p>
 								<div class="row">
 									<div class="col-md-6 card-buttons">
-										<a href="#" class="btn btn-dark">Kúpiť</a>
+										<a href="{{route('buy_one_product', ['id' => $products[9]->id])}}" class="btn btn-dark">Kúpiť</a>
 									</div>
 									<div class="col-md-6 card-buttons">
-										<a href="#" class="btn btn-light">Detail</a>
+										<a href="{{route('show_product', ['id' => $products[9]->id])}}"  class="btn btn-light">Detail</a>
 									</div>
 								</div>
 							</div>
@@ -220,17 +220,17 @@
 					</div>
 					<div class="product col-lg-3 col-md-6 col-sm-6 col-7">
 						<div class="product card">
-							<img class="card-img-top" src="images/product-photo.jpeg" alt="Card image cap" width="150" height="auto">
+							<img class="card-img-top" src="{{asset('storage/product-images/'.$products[10]->image()->first()->file)}}" width="150" height="205"/>
 							<div class="card-body">
-								<h5 class="card-title">YAMAHA C40 KLASICKÁ GITARA</h5>
-								<h6 class="card-subtitle">cort</h6>
-								<p class="card-price">11.25€</p>
+								<h5 class="card-title">{{$products[10]->product()->first()->name}}</h5>
+								<h6 class="card-subtitle">{{$products[10]->brand()->first()->name}}</h6>
+								<p class="card-price">{{$products[10]->price}}€</p>
 								<div class="row">
 									<div class="col-md-6 card-buttons">
-										<a href="#" class="btn btn-dark">Kúpiť</a>
+										<a href="{{route('buy_one_product', ['id' => $products[10]->id])}}" class="btn btn-dark">Kúpiť</a>
 									</div>
 									<div class="col-md-6 card-buttons">
-										<a href="#" class="btn btn-light">Detail</a>
+										<a href="{{route('show_product', ['id' => $products[10]->id])}}"  class="btn btn-light">Detail</a>
 									</div>
 								</div>
 							</div>
@@ -238,17 +238,17 @@
 					</div>
 					<div class="product col-lg-3 col-md-6 col-sm-6 col-7">
 						<div class="product card">
-							<img class="card-img-top" src="images/product-photo.jpeg" alt="Card image cap" width="150" height="auto">
+							<img class="card-img-top" src="{{asset('storage/product-images/'.$products[11]->image()->first()->file)}}" width="150" height="205"/>
 							<div class="card-body">
-								<h5 class="card-title">YAMAHA C40 KLASICKÁ GITARA</h5>
-								<h6 class="card-subtitle">cort</h6>
-								<p class="card-price">11.25€</p>
+								<h5 class="card-title">{{$products[11]->product()->first()->name}}</h5>
+								<h6 class="card-subtitle">{{$products[11]->brand()->first()->name}}</h6>
+								<p class="card-price">{{$products[11]->price}}€</p>
 								<div class="row">
 									<div class="col-md-6 card-buttons">
-										<a href="#" class="btn btn-dark">Kúpiť</a>
+										<a href="{{route('buy_one_product', ['id' => $products[11]->id])}}" class="btn btn-dark">Kúpiť</a>
 									</div>
 									<div class="col-md-6 card-buttons">
-										<a href="#" class="btn btn-light">Detail</a>
+										<a href="{{route('show_product', ['id' => $products[11]->id])}}"  class="btn btn-light">Detail</a>
 									</div>
 								</div>
 							</div>

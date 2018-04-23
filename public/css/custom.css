@@ -95,8 +95,11 @@
 .main-container > aside > div > ul > li > .submenu a:hover {
     text-decoration: none;
     color: black; }
-.main-container > aside > div > ul > li:hover .submenu {
-    display: block; }
+.main-container > aside > div > ul > li a {
+    cursor: pointer;}
+.main-container > aside > div > ul > li > a:hover {
+    color: rgba(0, 0, 0, 0.85);}
+
 .main-container > main {
     grid-area: content; }
 .main-container > main > #carouselExampleControls > .carousel-inner {
@@ -128,11 +131,17 @@
     text-align: center; }
 .main-container > main #products .product .card-buttons a, .main-container > main #filtered-products .product .card-buttons a, .main-container > main #searched-products .product .card-buttons a, .main-container > main #product-info .product .card-buttons a {
     width: 95%; }
+.main-container > main #products .product .card {
+    min-height: 430px; }
 .main-container > main #products .product .btn-light, .main-container > main #filtered-products .product .btn-light, .main-container > main #searched-products .product .btn-light, .main-container > main #product-info .product .btn-light {
     border: 1px solid; }
 .main-container > main #products .product .btn-dark, .main-container > main #filtered-products .product .btn-dark, .main-container > main #searched-products .product .btn-dark, .main-container > main #product-info .product .btn-dark {
     background-color: #cc0000;
     border-color: #cc0000; }
+.main-container >  main #product-info > .row:first-child > div > img {
+    margin-left: 30px; }
+.main-container >  main #product-info .card {
+    margin-top: 10px; }
 .main-container > main #filtered-products .product, .main-container > main #searched-products .product {
     margin: 0 auto;
     margin-bottom: 15px; }
@@ -306,7 +315,11 @@
     line-height: 1.2;
     font-size: 2rem;
     border-right: 2px solid #cc0000; }
-
+.main-container #search-results table tbody td{
+    vertical-align: inherit; }
+#button-last-control {
+    margin-top: 0px !important;
+    width: 100%; }
 @media (min-width: 850px) {
     .main-container {
         grid-template-columns: repeat(12, 1fr);

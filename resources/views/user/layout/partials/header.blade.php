@@ -41,12 +41,12 @@
 		</button>
 
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<a class="navbar-brand" href="#">
-				<img src="images/logo/logo.png" width="130px" height="auto" alt="Logo">
+			<a class="navbar-brand" href="{{ route('landing_page') }}">
+				<img src="http://localhost:8000/images/logo/logo.png" width="130px" height="auto" alt="Logo">
 			</a>
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item active">
-					<a class="nav-link" href="#">Domov
+					<a class="nav-link" href="{{ route('landing_page') }}">Domov
 						<span class="sr-only">(current)</span>
 					</a>
 				</li>
@@ -62,14 +62,16 @@
 			</ul>
 		</div>
 		<div>
-			<i class="fas fa-shopping-cart fa-2x"></i>
+			<a href="{{ route('customer_shopping_cart') }}">
+				<i class="fas fa-shopping-cart fa-2x"></i>
+			</a>
 		</div>
 	</nav>
 
 	<div class="row search-row">
 		<div class="col-md-4 offset-md-4 col-sm-10 offset-sm-1">
-			<form class="form">
-				<input class="form-control" type="search" placeholder="Search" aria-label="Search">
+			<form class="form"  action="{{ route('customer_search_products') }}" method="GET">
+				<input class="form-control" type="search" placeholder="Search" aria-label="Search" name="search_input">
 				<button class="btn search-button" type="submit">
 					<i class="fas fa-search"></i>
 				</button>
